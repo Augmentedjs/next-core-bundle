@@ -1,0 +1,255 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>resourceBundle.js</title>
+		<link rel="icon" type="image/png" href="favicon.png"/>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<style>
+				.page-header,
+				pre.code-toolbar > .toolbar:hover {
+					background-color: #607D8B;
+				}
+				.callout-primary,
+				.toc .nav > li > a:hover,
+				.toc .nav > li > a:focus,
+				.toc .nav > li.active > a,
+				.toc .nav > li.active > a:hover,
+				.toc .nav > li.active > a:focus,
+				pre.code-toolbar > .toolbar:hover {
+					border-left-color: #607D8B;
+				}
+				pre.code-toolbar > .toolbar:hover {
+					border-bottom-color: #607D8B;
+				}
+				.callout-primary h5,
+				.symbol-title.collapsible-symbol .toggle-icon,
+				.breadcrumb li a,
+				.toc .nav > li > a:hover,
+				.toc .nav > li > a:focus,
+				.toc .nav > li.active > a,
+				.toc .nav > li.active > a:hover,
+				.toc .nav > li.active > a:focus {
+					color: #607D8B;
+				}
+			</style>
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"ddd MMM Do YYYY","systemName":"Augmented.js Next Core","systemSummary":"Augmented.js Next Core - Simply Development.","systemLogo":"img/jensen-silo-circle-small.png","systemColor":"#607D8B","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"<a href='http://www.augmentedjs.com'>Augmented.js Homepage</a>","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":true,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":false,"sort":"linenum, longname, version, since","search":true,"favicon":"favicon.png","stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"logoFile":"public/images/jensen-silo-circle-small.png","navType":"vertical","protocol":"html://"};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand branding-logo" href="index.html" style="background-image: url(img/jensen-silo-circle-small.png);">
+					Augmented.js Next Core
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#BundleObject">BundleObject</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="MessageKeyFormatter.html">MessageKeyFormatter</a></li>
+											<li><a href="MessageReader.html">MessageReader</a></li>
+											<li><a href="ResourceBundle.html">ResourceBundle</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">resourceBundle.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">//TODO: add a library or make your own.
+//var resourceBundle = (!resourceBundle) ? new i18nBase() : resourceBundle;
+
+/**
+ * ResourceBundle Object used for configuration of a bundle
+ * @property {string} name Name/uri/file of the bundle
+ * @property {string} mode Bundlefile type (default: both)
+ * @property {boolean} cache Cache reading from bundle (default: true)
+ */
+export const BundleObject = {
+  name: '',
+  mode: 'both',
+  cache: true
+};
+
+/**
+ * Augmented.Utility.ResourceBundle
+ */
+export class ResourceBundle {
+  constructor() {
+    // setup a library
+  };
+
+  /**
+  * Gets the bundle(s) and registers to Augmented.Utility.ResourceBundle
+  * @param {Augmented.Utility.BundleObject} bundle Bundle to get
+  * @returns {object} returns a bundle
+  */
+  static getBundle() {
+    return {};//resourceBundle.properties.apply(this, arguments);
+  };
+
+  /**
+   * Gets a string from the registered bundle
+   */
+  static getString() {
+    return "";//resourceBundle.prop.apply(this, arguments);
+  }
+};
+
+/**
+ * Reads a message out of the bundle
+ */
+export class MessageReader {
+  constructor() {
+  };
+
+  /**
+   * getMessage - get the message out of the bundle.&lt;br/>
+   * If message is not found, then ResourceBundle returns the key
+   * wrapped in square brackets
+   * loop through the fallback path of the key by removing the
+   * last attribute and searching the bundle again
+   * stop when you get back a real message (not just the [key])
+   * @param {string} key The key to return from the bundle
+   */
+  static getMessage(key) {
+    const delimiter = ".";
+    // try getting the message out of the bundle
+    let msg = ResourceBundle.getString(key),
+    last = key.length,
+    originalKey = key;
+    // if message is not found, then ResourceBundle returns the key
+    // wrapped in square brackets
+    // loop through the fallback path of the key by removing the
+    // last attribute and searching the bundle again
+    // stop when you get back a real message (not just the [key])
+    while ( last > 0 &amp;&amp; msg == '[' + key + ']') {
+      last = key.lastIndexOf(delimiter);
+      key = key.substring(0,last);
+      msg = ResourceBundle.getString(key);
+    }
+    // if the original key or a fallback was found, return the
+    // message
+    // otherwise return the original key with square brackets
+    // (default jquery.i18n.properties plugin result)
+    return key ? msg : "[" + originalKey + "]";
+  }
+};
+
+/**
+ * &lt;p>Augmented.Utility.MessageKeyFormatter&lt;br/>
+ *
+ * Concatenate the pieces of the message together if a portion of the key is
+ * missing, the rest of the key is ignored. &lt;em>ex. if the "rule" attribute is
+ * missing, then the key will return with the message.level + message.kind only&lt;/em>&lt;/p>
+ */
+export class MessageKeyFormatter {
+  constructor() {
+    this.delimiter = ".";
+  };
+
+  /**
+  * Key Delimiter
+  * @property {string} delimiter The delimter used to seperate each key
+  */
+
+  /**
+   * Format a key for a message
+   * @param {message} message The message to format
+   * @returns The key to lookup in a bundle
+   */
+  static format(message) {
+    let key = "";
+    if (message) {
+      let x = message.level &amp;&amp;
+      (key += message.level, message.kind &amp;&amp;
+        (key += this.delimiter + message.kind, message.rule &amp;&amp;
+          (key += this.delimiter + message.rule, message.values.title &amp;&amp;
+            (key += this.delimiter + message.values.title))));
+    }
+    return (key) ? key : "";
+  };
+};
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+				<div class="footer-option"><a href='http://www.augmentedjs.com'>Augmented.js Homepage</a></div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Mon Aug 20th 2018 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->
