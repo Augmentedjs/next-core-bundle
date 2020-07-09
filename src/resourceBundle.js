@@ -6,6 +6,7 @@
  * @property {string} name Name/uri/file of the bundle
  * @property {string} mode Bundlefile type (default: both)
  * @property {boolean} cache Cache reading from bundle (default: true)
+ * @deprecated
  */
 export const BundleObject = {
   name: '',
@@ -15,6 +16,7 @@ export const BundleObject = {
 
 /**
  * Augmented.Utility.ResourceBundle
+ * @deprecated
  */
 export class ResourceBundle {
   constructor() {
@@ -40,6 +42,7 @@ export class ResourceBundle {
 
 /**
  * Reads a message out of the bundle
+ * @deprecated
  */
 export class MessageReader {
   constructor() {
@@ -84,6 +87,7 @@ export class MessageReader {
  * Concatenate the pieces of the message together if a portion of the key is
  * missing, the rest of the key is ignored. <em>ex. if the "rule" attribute is
  * missing, then the key will return with the message.level + message.kind only</em></p>
+ * @deprecated
  */
 export class MessageKeyFormatter {
   constructor() {
