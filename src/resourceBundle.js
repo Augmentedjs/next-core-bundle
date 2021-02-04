@@ -6,17 +6,15 @@
  * @property {string} name Name/uri/file of the bundle
  * @property {string} mode Bundlefile type (default: both)
  * @property {boolean} cache Cache reading from bundle (default: true)
- * @deprecated
  */
 export const BundleObject = {
-  name: '',
-  mode: 'both',
+  name: "",
+  mode: "both",
   cache: true
 };
 
 /**
- * Augmented.Utility.ResourceBundle
- * @deprecated
+ * ResourceBundle
  */
 export class ResourceBundle {
   constructor() {
@@ -24,8 +22,8 @@ export class ResourceBundle {
   };
 
   /**
-  * Gets the bundle(s) and registers to Augmented.Utility.ResourceBundle
-  * @param {Augmented.Utility.BundleObject} bundle Bundle to get
+  * Gets the bundle(s) and registers to ResourceBundle
+  * @param {BundleObject} bundle Bundle to get
   * @returns {object} returns a bundle
   */
   static getBundle() {
@@ -42,7 +40,6 @@ export class ResourceBundle {
 
 /**
  * Reads a message out of the bundle
- * @deprecated
  */
 export class MessageReader {
   constructor() {
@@ -68,7 +65,7 @@ export class MessageReader {
     // loop through the fallback path of the key by removing the
     // last attribute and searching the bundle again
     // stop when you get back a real message (not just the [key])
-    while ( last > 0 && msg == '[' + key + ']') {
+    while ( last > 0 && msg == "[" + key + "]") {
       last = key.lastIndexOf(delimiter);
       key = key.substring(0,last);
       msg = ResourceBundle.getString(key);
@@ -82,12 +79,11 @@ export class MessageReader {
 };
 
 /**
- * <p>Augmented.Utility.MessageKeyFormatter<br/>
+ * <p>MessageKeyFormatter<br/>
  *
  * Concatenate the pieces of the message together if a portion of the key is
  * missing, the rest of the key is ignored. <em>ex. if the "rule" attribute is
  * missing, then the key will return with the message.level + message.kind only</em></p>
- * @deprecated
  */
 export class MessageKeyFormatter {
   constructor() {
