@@ -1,5 +1,8 @@
 const path = require("path");
 const webpack = require("webpack");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const Package = require("./package.json");
+const isProd = process.argv[process.argv.indexOf("--mode") + 1] === "production";
 
 module.exports = {
   entry: "./src/index.js",
@@ -28,10 +31,13 @@ module.exports = {
   externals: {
   },
   stats: "errors-only",
-  devtool: "source-map",
+  devtool: isProd ? false : "source-map",
   plugins: [
+    new CleanWebpackPlugin(),
     new webpack.DefinePlugin({
-      VERSION: JSON.stringify(require("./package.json").version)
+      VERSION: JSON.stringify(Package.version),
+      "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV),
+      "process.env.DEBUG": JSON.stringify(process.env.DEBUG)
     })
   ]
 };
