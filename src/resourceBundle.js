@@ -7,7 +7,7 @@ const DEFAULT_LANGUAGE = "en",
 export class ResourceBundle {
   constructor(options = {}) {
     // setup a library
-    if (options.locale) {
+    if (options.locale && typeof options.locale === "string") {
       const locale = options.locale.split("_");
       this._language = locale[0];
       this._country = locale[1];
