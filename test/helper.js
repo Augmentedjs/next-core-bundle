@@ -1,14 +1,4 @@
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
-const dom = (new JSDOM(/*html*/`<!doctype html><html><body><article><section id="header"><header><h1>Augmented.js Next - Mocha Tests</h1><h2 id="augmented" data-testView="version"></h2></header></section></article><div id="sandbox"></div></body></html>`)).window;
-
-global.document = dom.document
-global.window = dom.window
-global.navigator = {
-  userAgent: "node.js"
-};
-
-global.Bundle = require("../temp/next-core-bundle.js");
+global.Core = require("../temp/next-core-bundle.js");
 
 const chai = require("chai");
 global.chai = chai;

@@ -2,13 +2,11 @@
   "presets": [
     ["@babel/preset-env", {
       "targets": {
-        "node": "12"
+        "node": "14"
       },
       "debug": true,
       "modules": false
-    },
-    "@babel/preset-react"
-    ]
+    }]
   ],
   "plugins": [
     "babel-plugin-remove-template-literals-whitespace"
@@ -27,7 +25,7 @@
       "presets": [
         ["@babel/preset-env", {
           "targets": {
-            "node": "12"
+            "node": "14"
           },
           "debug": true,
           "modules": false

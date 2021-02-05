@@ -1,48 +1,66 @@
-//TODO: add a library or make your own.
-//var resourceBundle = (!resourceBundle) ? new i18nBase() : resourceBundle;
-
-/**
- * ResourceBundle Object used for configuration of a bundle
- * @property {string} name Name/uri/file of the bundle
- * @property {string} mode Bundlefile type (default: both)
- * @property {boolean} cache Cache reading from bundle (default: true)
- */
-export const BundleObject = {
-  name: "",
-  mode: "both",
-  cache: true
-};
+const DEFAULT_LANGUAGE = "en",
+      DEFAULT_COUNTRY = "US";
 
 /**
  * ResourceBundle
  */
 export class ResourceBundle {
-  constructor() {
+  constructor(options = {}) {
     // setup a library
+    if (options.locale) {
+      const locale = options.locale.split("_");
+      this._language = locale[0];
+      this._country = locale[1];
+    } else {
+      this._language = DEFAULT_LANGUAGE;
+      this._country = DEFAULT_COUNTRY;
+    }
+
+    this._fallback = (options.fallback && options.fallback === true) ? true : false;
+    
+    this._bundle = (options.bundle && typeof options.bundle === "object") ? options.bundle : {};
   };
 
-  /**
-  * Gets the bundle(s) and registers to ResourceBundle
-  * @param {BundleObject} bundle Bundle to get
-  * @returns {object} returns a bundle
-  */
-  static getBundle() {
-    return {};//resourceBundle.properties.apply(this, arguments);
+  get locale() {
+    return `${this._language}_${this._country}`;
   };
 
-  /**
-   * Gets a string from the registered bundle
-   */
-  static getString() {
-    return "";//resourceBundle.prop.apply(this, arguments);
-  }
+  get language() {
+    return this._language;
+  };
+
+  get country() {
+    return this._country;
+  };
+
+  get bundle() {
+    return this._bundle;
+  };
+
+  get(key) {
+    let message = null;
+    if (key) {
+      if (this._fallback) {
+        if (this.bundle[this.locale][key]) {
+          message = this.bundle[this.locale][key];
+        } else if (this.bundle[this.language][key]) {
+          message = this.bundle[this.language][key];
+        }
+      }
+      if (this.bundle[this.locale][key]) {
+        message = this.bundle[this.locale][key];
+      }
+    }
+    return message;
+  };
 };
 
 /**
  * Reads a message out of the bundle
  */
 export class MessageReader {
-  constructor() {
+  constructor(bundle) {
+    this._resouceBundle = bundle;
   };
 
   /**
@@ -54,10 +72,10 @@ export class MessageReader {
    * stop when you get back a real message (not just the [key])
    * @param {string} key The key to return from the bundle
    */
-  static getMessage(key) {
+  getMessage(key) {
     const delimiter = ".";
     // try getting the message out of the bundle
-    let msg = ResourceBundle.getString(key),
+    let msg = this._resourceBundle.get(key),
     last = key.length,
     originalKey = key;
     // if message is not found, then ResourceBundle returns the key
@@ -68,7 +86,7 @@ export class MessageReader {
     while ( last > 0 && msg == "[" + key + "]") {
       last = key.lastIndexOf(delimiter);
       key = key.substring(0,last);
-      msg = ResourceBundle.getString(key);
+      msg = this._resourceBundle.get(key);
     }
     // if the original key or a fallback was found, return the
     // message

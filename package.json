@@ -38,9 +38,7 @@
     "documentation": "^13.1.1",
     "foodoc": "0.0.9",
     "jsdoc": "^3.6.6",
-    "jsdom": "^16.4.0",
     "mocha": "^8.2.1",
-    "mocha-jsdom": "^2.0.0",
     "webpack": "^5.20.1",
     "webpack-cli": "^4.5.0"
   },
