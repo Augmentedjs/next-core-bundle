@@ -1,3 +1,3 @@
-import { ResourceBundle, MessageReader, MessageKeyFormatter } from "./resourceBundle.js";
+import { ResourceBundle, MessageKeyFormatter } from "./resourceBundle.js";
 
-export { ResourceBundle, MessageReader, MessageKeyFormatter };
+export { ResourceBundle, MessageKeyFormatter };

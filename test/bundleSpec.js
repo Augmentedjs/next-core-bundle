@@ -2,7 +2,9 @@ const { BundleObject, ResourceBundle, MessageReader, MessageKeyFormatter } = Cor
 
 const BUNDLE_EN_US = {
   "hello": "hello",
-  "goodbye": "goodbye"
+  "goodbye": "goodbye",
+  "my": "my",
+  "my.big.key": "My Big Key"
 };
 
 const BUNDLE_ES = {
@@ -45,8 +47,22 @@ describe("Given an Resource Bundle", () => {
       expect(rb.get("hello")).to.equal("hola");
     });
 
-    it("can get the key 'house' from the bundle with fallback", () => {
-      expect(rb.get("house")).to.equal("casa");
+    it("can get the key 'house' from the bundle with fallback", async () => {
+      expect(await rb.get("house")).to.equal("casa");
+    });
+  });
+
+  describe("Given an Resource Bundle in English", () => {
+    let rb = null;
+    beforeEach(() => {
+      rb = new ResourceBundle({ "locale": "en_US", "bundle": { "en_US": BUNDLE_EN_US, "es_MX": BUNDLE_ES_MX, "es": BUNDLE_ES }, "fallback": true });
+    });
+    afterEach(() => {
+      rb = null;
+    })
+
+    it("can get the key 'my.big.key.special' from the bundle (no existing key, but has fallback)", () => {
+      expect(rb.get("my.big.key.special")).to.equal("My Big Key");
     });
   });
 });

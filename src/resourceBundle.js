@@ -16,9 +16,32 @@ export class ResourceBundle {
       this._country = DEFAULT_COUNTRY;
     }
 
+    /**
+     * @property {boolean} fallback Is fallback support enabled
+     */
     this._fallback = (options.fallback && options.fallback === true) ? true : false;
     
+    /**
+     * @property {object} bundle The bundle used
+     */
     this._bundle = (options.bundle && typeof options.bundle === "object") ? options.bundle : {};
+
+    /**
+     * @property {string} delimiter The key delimiter (if fallback is enabled)
+     */
+    this._delimiter = (options.delimiter) ? options.delimiter : ".";
+
+    /**
+     * @property {string} locale The locale
+     */
+
+     /**
+     * @property {language} language The language
+     */
+
+     /**
+     * @property {country} country The country
+     */
   };
 
   get locale() {
@@ -37,63 +60,68 @@ export class ResourceBundle {
     return this._bundle;
   };
 
+  /**
+   * Get a string from the bundle
+   * @param {string} key The key to find in the bundle
+   */
   get(key) {
-    let message = null;
     if (key) {
+      const msg = this._getMessage(this.bundle[this.locale], key);
+      let fallback = null;
+      if (!msg || msg === `[${key}]`) {
+        fallback = this._getMessage(this.bundle[this.language], key);
+      }
+      console.debug("get call msg", msg, fallback, this._fallback);
       if (this._fallback) {
-        if (this.bundle[this.locale][key]) {
-          message = this.bundle[this.locale][key];
-        } else if (this.bundle[this.language][key]) {
-          message = this.bundle[this.language][key];
+        if (fallback && fallback !== `[${key}]`) {
+          console.debug("fallback is correct", fallback);
+          return fallback;
+        } else if (!fallback && msg && msg !== `[${key}]`) {
+          console.debug("original is correct", msg);
+          return msg;
+        } else {
+          console.debug("not found", key);
         }
       }
-      if (this.bundle[this.locale][key]) {
-        message = this.bundle[this.locale][key];
+      if (msg || msg !== `[${key}]`) {
+        return msg;
       }
     }
-    return message;
-  };
-};
-
-/**
- * Reads a message out of the bundle
- */
-export class MessageReader {
-  constructor(bundle) {
-    this._resouceBundle = bundle;
+    return null;
   };
 
   /**
-   * getMessage - get the message out of the bundle.<br/>
+   * _getMessage - get the message out of the bundle.<br/>
    * If message is not found, then ResourceBundle returns the key
    * wrapped in square brackets
    * loop through the fallback path of the key by removing the
    * last attribute and searching the bundle again
    * stop when you get back a real message (not just the [key])
    * @param {string} key The key to return from the bundle
+   * @private
    */
-  getMessage(key) {
-    const delimiter = ".";
+  _getMessage(bundle, key) {
     // try getting the message out of the bundle
-    let msg = this._resourceBundle.get(key),
+    let msg = bundle[key],
     last = key.length,
     originalKey = key;
+    console.debug("_getMessage org msg", msg, key, bundle);
     // if message is not found, then ResourceBundle returns the key
     // wrapped in square brackets
     // loop through the fallback path of the key by removing the
     // last attribute and searching the bundle again
     // stop when you get back a real message (not just the [key])
-    while ( last > 0 && msg == "[" + key + "]") {
-      last = key.lastIndexOf(delimiter);
+    while ( last > 0 && (msg === `[${key}]` || msg === undefined)) {
+      last = key.lastIndexOf(this._delimiter);
       key = key.substring(0,last);
-      msg = this._resourceBundle.get(key);
+      msg = bundle[key];
+      console.debug("_getMessage msg", msg, key);
     }
     // if the original key or a fallback was found, return the
     // message
     // otherwise return the original key with square brackets
-    // (default jquery.i18n.properties plugin result)
-    return key ? msg : "[" + originalKey + "]";
-  }
+    return key ? msg : `[${originalKey}]`;
+  };
 };
 
 /**
@@ -104,8 +132,8 @@ export class MessageReader {
  * missing, then the key will return with the message.level + message.kind only</em></p>
  */
 export class MessageKeyFormatter {
-  constructor() {
-    this.delimiter = ".";
+  constructor(options = {}) {
+    this._delimiter = (options.delimiter) ? options.delimiter : ".";
   };
 
   /**
@@ -118,14 +146,14 @@ export class MessageKeyFormatter {
    * @param {message} message The message to format
    * @returns The key to lookup in a bundle
    */
-  static format(message) {
+  static format(message = {}) {
     let key = "";
     if (message) {
       let x = message.level &&
       (key += message.level, message.kind &&
-        (key += this.delimiter + message.kind, message.rule &&
-          (key += this.delimiter + message.rule, message.values.title &&
-            (key += this.delimiter + message.values.title))));
+        (key += this._delimiter + message.kind, message.rule &&
+          (key += this._delimiter + message.rule, message.values.title &&
+            (key += this._delimiter + message.values.title))));
     }
     return (key) ? key : "";
   };
