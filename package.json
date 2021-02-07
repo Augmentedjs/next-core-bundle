@@ -43,7 +43,7 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
-    "i18next": "^19.8.7"
+    "string.prototype.replaceall": "^1.0.4"
   },
   "bugs": {
     "url": "https://github.com/Augmentedjs/next-core-bundle/issues"

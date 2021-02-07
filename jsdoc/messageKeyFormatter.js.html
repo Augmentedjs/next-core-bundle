@@ -1,9 +1,10 @@
+<!-- start:source.tmpl.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Classes</title>
+		<title>messageKeyFormatter.js</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -42,7 +43,7 @@
 			</style>
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"ddd MMM Do YYYY","systemName":"Augmented.js Next Core","systemSummary":"Augmented.js Next Core - Simply Development.","systemLogo":"img/jensen-silo-circle-small.png","systemColor":"#607D8B","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"<a href='http://www.augmentedjs.com'>Augmented.js Homepage</a>","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":true,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":false,"sort":"linenum, longname, version, since","search":true,"favicon":"favicon.png","stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"logoFile":"public/images/jensen-silo-circle-small.png","navType":"vertical","protocol":"html://"};
-			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
 </head>
@@ -87,44 +88,53 @@
 	</header>
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
-				<span class="kind">list</span>
-				<h1><span class="name">Classes</span></h1>
-				<div class="summary"><p>All documented classes.</p></div>			</div>
+				<span class="kind">source</span>
+				<h1><span class="name">messageKeyFormatter.js</span></h1>
+			</div>
 		</div>
 	<div class="container content">
 		<div class="row">
-			<div class="col-md-9 main-content">
-						<ol class="breadcrumb">
-							<li><a href="index.html">Home</a></li>
-							<li class="active">Classes</li>
-						</ol>
-					<section>
-		<h2><span class="name">Classes</span></h2>
-		<article class="secondary">
-				<dl class="symbol">
-						
-						<dt class="symbol-title class public">
-			<h4 id="MessageKeyFormatter" class="class public"><a href="MessageKeyFormatter.html"><span class="signature-new">new&nbsp;</span><span class="name">MessageKeyFormatter</span><span class="signature-params">()</span></a></h4>
-</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-						<hr/>
-						<dt class="symbol-title class public">
-			<h4 id="ResourceBundle" class="class public"><a href="ResourceBundle.html"><span class="signature-new">new&nbsp;</span><span class="name">ResourceBundle</span><span class="signature-params">()</span></a></h4>
-</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-				</dl>
-		</article>
-					</section>
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">
+/**
+ * &lt;p>MessageKeyFormatter&lt;br/>
+ *
+ * Concatenate the pieces of the message together if a portion of the key is
+ * missing, the rest of the key is ignored. &lt;em>ex. if the "rule" attribute is
+ * missing, then the key will return with the message.level + message.kind only&lt;/em>&lt;/p>
+ */
+export class MessageKeyFormatter {
+  constructor(options = {}) {
+    this._delimiter = (options.delimiter) ? options.delimiter : ".";
+  };
+
+  /**
+  * Key Delimiter
+  * @property {string} delimiter The delimter used to seperate each key
+  */
+
+  /**
+   * Format a key for a message
+   * @param {message} message The message to format
+   * @returns The key to lookup in a bundle
+   */
+  static format(message = {}) {
+    let key = "";
+    if (message) {
+      let x = message.level &amp;&amp;
+      (key += message.level, message.kind &amp;&amp;
+        (key += this._delimiter + message.kind, message.rule &amp;&amp;
+          (key += this._delimiter + message.rule, message.values.title &amp;&amp;
+            (key += this._delimiter + message.values.title))));
+    }
+    return (key) ? key : "";
+  };
+};
+</code></pre>
+		</section>
 			</div>
-				<div class="col-md-3 side-content">
-					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
-				</div>
 		</div>
 	</div>
 	<footer>
@@ -156,3 +166,4 @@
 	
 </body>
 </html>
+<!-- end:source.tmpl.hbs -->

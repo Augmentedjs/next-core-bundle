@@ -1,4 +1,4 @@
-const { BundleObject, ResourceBundle, MessageReader, MessageKeyFormatter } = Core;
+const { ResourceBundle } = Core;
 
 const BUNDLE_EN_US = {
   "hello": "hello",
