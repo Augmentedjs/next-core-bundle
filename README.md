@@ -12,94 +12,90 @@ This library is Deprecated and will end of life with v3.x
 
 ### Table of Contents
 
--   [BundleObject](#bundleobject)
-    -   [Properties](#properties)
 -   [ResourceBundle](#resourcebundle)
-    -   [getBundle](#getbundle)
-        -   [Parameters](#parameters)
-    -   [getString](#getstring)
--   [MessageReader](#messagereader)
-    -   [getMessage](#getmessage)
-        -   [Parameters](#parameters-1)
--   [MessageKeyFormatter](#messagekeyformatter)
-    -   [format](#format)
-        -   [Parameters](#parameters-2)
+    -   [Parameters](#parameters)
+    -   [\_fallback](#_fallback)
+        -   [Properties](#properties)
+    -   [\_bundle](#_bundle)
         -   [Properties](#properties-1)
-    -   [format](#format-1)
+    -   [\_delimiter](#_delimiter)
+        -   [Properties](#properties-2)
+    -   [get](#get)
+        -   [Parameters](#parameters-1)
+    -   [Properties](#properties-3)
+    -   [Properties](#properties-4)
+    -   [Properties](#properties-5)
+-   [MessageKeyFormatter](#messagekeyformatter)
+    -   [Parameters](#parameters-2)
+    -   [format](#format)
         -   [Parameters](#parameters-3)
-
-## BundleObject
-
-ResourceBundle Object used for configuration of a bundle
-
-### Properties
-
--   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Name/uri/file of the bundle
--   `mode` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Bundlefile type (default: both)
--   `cache` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** Cache reading from bundle (default: true)
-
-**Meta**
-
--   **deprecated**: This is deprecated.
-
+        -   [Properties](#properties-6)
+    -   [format](#format-1)
+        -   [Parameters](#parameters-4)
 
 ## ResourceBundle
 
-Augmented.Utility.ResourceBundle
+ResourceBundle
 
-**Meta**
+### Parameters
 
--   **deprecated**: This is deprecated.
+-   `options`   (optional, default `{}`)
 
+### \_fallback
 
-### getBundle
+#### Properties
 
-Gets the bundle(s) and registers to Augmented.Utility.ResourceBundle
+-   `fallback` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** Is fallback support enabled
 
-#### Parameters
+### \_bundle
 
--   `bundle` **Augmented.Utility.BundleObject** Bundle to get
+#### Properties
 
-Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** returns a bundle
+-   `bundle` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The bundle used
 
-### getString
+### \_delimiter
 
-Gets a string from the registered bundle
+#### Properties
 
-## MessageReader
+-   `delimiter` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The key delimiter (if fallback is enabled)
 
-Reads a message out of the bundle
+### get
 
-**Meta**
-
--   **deprecated**: This is deprecated.
-
-
-### getMessage
-
-getMessage - get the message out of the bundle.<br/>
-If message is not found, then ResourceBundle returns the key
-wrapped in square brackets
-loop through the fallback path of the key by removing the
-last attribute and searching the bundle again
-stop when you get back a real message (not just the [key])
+Get a string from the bundle
 
 #### Parameters
 
--   `key` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The key to return from the bundle
+-   `key` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The key to find in the bundle
+
+## 
+
+### Properties
+
+-   `locale` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The locale
+
+## 
+
+### Properties
+
+-   `language` **language** The language
+
+## 
+
+### Properties
+
+-   `country` **country** The country
 
 ## MessageKeyFormatter
 
-<p>Augmented.Utility.MessageKeyFormatter<br/>
+<p>MessageKeyFormatter<br/>
 
 Concatenate the pieces of the message together if a portion of the key is
 missing, the rest of the key is ignored. <em>ex. if the "rule" attribute is
 missing, then the key will return with the message.level + message.kind only</em></p>
 
-**Meta**
+### Parameters
 
--   **deprecated**: This is deprecated.
-
+-   `options`   (optional, default `{}`)
 
 ### format
 
@@ -107,7 +103,7 @@ Key Delimiter
 
 #### Parameters
 
--   `message`  
+-   `message`   (optional, default `{}`)
 
 #### Properties
 
@@ -119,6 +115,6 @@ Format a key for a message
 
 #### Parameters
 
--   `message` **message** The message to format
+-   `message` **message** The message to format (optional, default `{}`)
 
 Returns **any** The key to lookup in a bundle

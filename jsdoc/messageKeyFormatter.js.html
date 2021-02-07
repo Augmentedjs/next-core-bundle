@@ -1,9 +1,10 @@
+<!-- start:source.tmpl.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>MessageReader</title>
+		<title>messageKeyFormatter.js</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -42,7 +43,7 @@
 			</style>
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"ddd MMM Do YYYY","systemName":"Augmented.js Next Core","systemSummary":"Augmented.js Next Core - Simply Development.","systemLogo":"img/jensen-silo-circle-small.png","systemColor":"#607D8B","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"<a href='http://www.augmentedjs.com'>Augmented.js Homepage</a>","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":true,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":false,"sort":"linenum, longname, version, since","search":true,"favicon":"favicon.png","stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"logoFile":"public/images/jensen-silo-circle-small.png","navType":"vertical","protocol":"html://"};
-			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
 </head>
@@ -64,16 +65,9 @@
 			<div class="navbar-collapse collapse" id="topNavigation">
 				<ul class="nav navbar-nav">
 								<li class="dropdown">
-									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
-									<ul class="dropdown-menu">
-											<li><a href="global.html#BundleObject">BundleObject</a></li>
-									</ul>
-								</li>
-								<li class="dropdown">
 									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 									<ul class="dropdown-menu">
 											<li><a href="MessageKeyFormatter.html">MessageKeyFormatter</a></li>
-											<li><a href="MessageReader.html">MessageReader</a></li>
 											<li><a href="ResourceBundle.html">ResourceBundle</a></li>
 									</ul>
 								</li>
@@ -94,153 +88,58 @@
 	</header>
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
-				<span class="kind">class</span>
-				<h1><span class="name">MessageReader</span></h1>
+				<span class="kind">source</span>
+				<h1><span class="name">messageKeyFormatter.js</span></h1>
 			</div>
 		</div>
 	<div class="container content">
 		<div class="row">
-			<div class="col-md-9 main-content">
-						<ol class="breadcrumb">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="list_class.html">Classes</a></li>
-							<li class="active">MessageReader</li>
-						</ol>
-					<section>
-							<dl class="symbol primary">
-								<dt class="symbol-title class">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">MessageReader</span><span class="signature-params">()</span></h2>
-</dt>
-<dd class="symbol-details class" style="max-height: 9999px;">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>Reads a message out of the bundle</p></div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- deprecated -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Deprecated</label>
-								<div class="col-sm-9">
-									<p class="form-control-static">true</p>
-								</div>
-							</div>
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="resourceBundle.js.html">resourceBundle.js</a>, <a href="resourceBundle.js.html#line-48">line 48</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-							</dl>
-							<article class="secondary">
-									<h3>Classes</h3>
-									<dl class="symbol">
-											<hr/>
-											<dt class="symbol-title class public">
-			<h4 id="MessageReader" class="class public"><a href="MessageReader.html"><span class="signature-new">new&nbsp;</span><span class="name">MessageReader</span><span class="signature-params">()</span></a></h4>
-		</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-									</dl>
-									<h3>Methods</h3>
-									<dl class="symbol">
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id=".getMessage" class="function public"><span class="signature-attribs">&lt;static> </span><span class="name">getMessage</span><span class="signature-params">( <span class="signature-param">key</span>&nbsp;)</span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>getMessage - get the message out of the bundle.<br/><br>
-			If message is not found, then ResourceBundle returns the key<br>
-			wrapped in square brackets<br>
-			loop through the fallback path of the key by removing the<br>
-			last attribute and searching the bundle again<br>
-			stop when you get back a real message (not just the [key])</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>key</code></td>
-							<td><span class="param-type">string</span></td>
-							<td class="last">
-									<p>The key to return from the bundle</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">
+/**
+ * &lt;p>MessageKeyFormatter&lt;br/>
+ *
+ * Concatenate the pieces of the message together if a portion of the key is
+ * missing, the rest of the key is ignored. &lt;em>ex. if the "rule" attribute is
+ * missing, then the key will return with the message.level + message.kind only&lt;/em>&lt;/p>
+ */
+export class MessageKeyFormatter {
+  constructor(options = {}) {
+    this._delimiter = (options.delimiter) ? options.delimiter : ".";
+  };
+
+  /**
+  * Key Delimiter
+  * @property {string} delimiter The delimter used to seperate each key
+  */
+
+  /**
+   * Format a key for a message
+   * @param {message} message The message to format
+   * @returns The key to lookup in a bundle
+   */
+  static format(message = {}) {
+    let key = "";
+    if (message) {
+      let x = message.level &amp;&amp;
+      (key += message.level, message.kind &amp;&amp;
+        (key += this._delimiter + message.kind, message.rule &amp;&amp;
+          (key += this._delimiter + message.rule, message.values.title &amp;&amp;
+            (key += this._delimiter + message.values.title))));
+    }
+    return (key) ? key : "";
+  };
+};
+</code></pre>
+		</section>
 			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="resourceBundle.js.html">resourceBundle.js</a>, <a href="resourceBundle.js.html#line-60">line 60</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-									</dl>
-							</article>
-					</section>
-			</div>
-				<div class="col-md-3 side-content">
-					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
-				</div>
 		</div>
 	</div>
 	<footer>
 				<div class="footer-option"><a href='http://www.augmentedjs.com'>Augmented.js Homepage</a></div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.4</a> on Thu Jul 9th 2020 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Sat Feb 6th 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -267,3 +166,4 @@
 	
 </body>
 </html>
+<!-- end:source.tmpl.hbs -->

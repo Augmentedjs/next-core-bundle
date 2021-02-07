@@ -59,70 +59,33 @@ window.lunrData = {
           "list:class"
         ],
         "ResourceBundle.html": [
-          "augmented.utility.resourcebundl",
           "class",
           "resourcebundl"
         ],
-        "ResourceBundle.html#.getBundle": [
-          "augmented.utility.resourcebundl",
-          "bundl",
-          "bundle(",
-          "function",
-          "get",
-          "getbundl",
-          "lt;static&gt",
-          "regist",
-          "resourcebundle.getbundl"
+        "ResourceBundle.html#_fallback": [
+          "_fallback",
+          "member",
+          "resourcebundle#_fallback"
         ],
-        "ResourceBundle.html#.getString": [
+        "ResourceBundle.html#_bundle": [
+          "_bundl",
+          "member",
+          "resourcebundle#_bundl"
+        ],
+        "ResourceBundle.html#_delimiter": [
+          "_delimit",
+          "member",
+          "resourcebundle#_delimit"
+        ],
+        "ResourceBundle.html#get": [
           "bundl",
           "function",
-          "get",
-          "getstr",
-          "lt;static&gt",
-          "regist",
-          "resourcebundle.getstr",
-          "string"
-        ],
-        "MessageReader.html": [
-          "bundl",
-          "class",
-          "messag",
-          "messageread",
-          "out",
-          "read"
-        ],
-        "MessageReader.html#.getMessage": [
-          "again",
-          "attribut",
-          "back",
-          "bracket",
-          "bundl",
-          "fallback",
-          "found",
-          "function",
-          "getmessag",
           "key",
-          "last",
-          "loop",
-          "lt;static&gt",
-          "messag",
-          "messagereader.getmessag",
-          "out",
-          "path",
-          "real",
-          "remov",
-          "resourcebundl",
-          "return",
-          "search",
-          "squar",
-          "stop",
-          "through",
-          "wrap"
+          "resourcebundle#get",
+          "string"
         ],
         "MessageKeyFormatter.html": [
           "attribut",
-          "augmented.utility.messagekeyformatt",
           "class",
           "concaten",
           "ex",
@@ -181,155 +144,10 @@ window.lunrData = {
                                   "tf": 214
                                 }
                               }
-                            },
-                            "u": {
-                              "docs": {},
-                              "t": {
-                                "docs": {},
-                                "i": {
-                                  "docs": {},
-                                  "l": {
-                                    "docs": {},
-                                    "i": {
-                                      "docs": {},
-                                      "t": {
-                                        "docs": {},
-                                        "y": {
-                                          "docs": {},
-                                          ".": {
-                                            "docs": {},
-                                            "r": {
-                                              "docs": {},
-                                              "e": {
-                                                "docs": {},
-                                                "s": {
-                                                  "docs": {},
-                                                  "o": {
-                                                    "docs": {},
-                                                    "u": {
-                                                      "docs": {},
-                                                      "r": {
-                                                        "docs": {},
-                                                        "c": {
-                                                          "docs": {},
-                                                          "e": {
-                                                            "docs": {},
-                                                            "b": {
-                                                              "docs": {},
-                                                              "u": {
-                                                                "docs": {},
-                                                                "n": {
-                                                                  "docs": {},
-                                                                  "d": {
-                                                                    "docs": {},
-                                                                    "l": {
-                                                                      "docs": {
-                                                                        "ResourceBundle.html": {
-                                                                          "ref": "ResourceBundle.html",
-                                                                          "tf": 50
-                                                                        },
-                                                                        "ResourceBundle.html#.getBundle": {
-                                                                          "ref": "ResourceBundle.html#.getBundle",
-                                                                          "tf": 12.5
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            },
-                                            "m": {
-                                              "docs": {},
-                                              "e": {
-                                                "docs": {},
-                                                "s": {
-                                                  "docs": {},
-                                                  "s": {
-                                                    "docs": {},
-                                                    "a": {
-                                                      "docs": {},
-                                                      "g": {
-                                                        "docs": {},
-                                                        "e": {
-                                                          "docs": {},
-                                                          "k": {
-                                                            "docs": {},
-                                                            "e": {
-                                                              "docs": {},
-                                                              "y": {
-                                                                "docs": {},
-                                                                "f": {
-                                                                  "docs": {},
-                                                                  "o": {
-                                                                    "docs": {},
-                                                                    "r": {
-                                                                      "docs": {},
-                                                                      "m": {
-                                                                        "docs": {},
-                                                                        "a": {
-                                                                          "docs": {},
-                                                                          "t": {
-                                                                            "docs": {},
-                                                                            "t": {
-                                                                              "docs": {
-                                                                                "MessageKeyFormatter.html": {
-                                                                                  "ref": "MessageKeyFormatter.html",
-                                                                                  "tf": 2.631578947368421
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
                             }
                           }
                         }
                       }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "g": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "i": {
-                "docs": {},
-                "n": {
-                  "docs": {
-                    "MessageReader.html#.getMessage": {
-                      "ref": "MessageReader.html#.getMessage",
-                      "tf": 1.7857142857142856
                     }
                   }
                 }
@@ -350,10 +168,6 @@ window.lunrData = {
                       "docs": {},
                       "t": {
                         "docs": {
-                          "MessageReader.html#.getMessage": {
-                            "ref": "MessageReader.html#.getMessage",
-                            "tf": 1.7857142857142856
-                          },
                           "MessageKeyFormatter.html": {
                             "ref": "MessageKeyFormatter.html",
                             "tf": 2.631578947368421
@@ -420,10 +234,6 @@ window.lunrData = {
                     },
                     "ResourceBundle.html": {
                       "ref": "ResourceBundle.html",
-                      "tf": 110
-                    },
-                    "MessageReader.html": {
-                      "ref": "MessageReader.html",
                       "tf": 110
                     },
                     "MessageKeyFormatter.html": {
@@ -553,26 +363,13 @@ window.lunrData = {
             "a": {
               "docs": {},
               "d": {
-                "docs": {
-                  "MessageReader.html": {
-                    "ref": "MessageReader.html",
-                    "tf": 12.5
-                  }
-                },
+                "docs": {},
                 "m": {
                   "docs": {
                     "index.html": {
                       "ref": "index.html",
                       "tf": 110
                     }
-                  }
-                }
-              },
-              "l": {
-                "docs": {
-                  "MessageReader.html#.getMessage": {
-                    "ref": "MessageReader.html#.getMessage",
-                    "tf": 1.7857142857142856
                   }
                 }
               }
@@ -601,35 +398,80 @@ window.lunrData = {
                                   "docs": {
                                     "ResourceBundle.html": {
                                       "ref": "ResourceBundle.html",
-                                      "tf": 1900
-                                    },
-                                    "MessageReader.html#.getMessage": {
-                                      "ref": "MessageReader.html#.getMessage",
-                                      "tf": 1.7857142857142856
+                                      "tf": 1950
                                     }
                                   },
                                   "e": {
                                     "docs": {},
-                                    ".": {
+                                    "#": {
                                       "docs": {},
-                                      "g": {
+                                      "_": {
                                         "docs": {},
-                                        "e": {
+                                        "f": {
                                           "docs": {},
-                                          "t": {
+                                          "a": {
                                             "docs": {},
-                                            "b": {
+                                            "l": {
                                               "docs": {},
-                                              "u": {
+                                              "l": {
                                                 "docs": {},
-                                                "n": {
+                                                "b": {
                                                   "docs": {},
-                                                  "d": {
+                                                  "a": {
                                                     "docs": {},
-                                                    "l": {
+                                                    "c": {
+                                                      "docs": {},
+                                                      "k": {
+                                                        "docs": {
+                                                          "ResourceBundle.html#_fallback": {
+                                                            "ref": "ResourceBundle.html#_fallback",
+                                                            "tf": 1150
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "b": {
+                                          "docs": {},
+                                          "u": {
+                                            "docs": {},
+                                            "n": {
+                                              "docs": {},
+                                              "d": {
+                                                "docs": {},
+                                                "l": {
+                                                  "docs": {
+                                                    "ResourceBundle.html#_bundle": {
+                                                      "ref": "ResourceBundle.html#_bundle",
+                                                      "tf": 1150
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "d": {
+                                          "docs": {},
+                                          "e": {
+                                            "docs": {},
+                                            "l": {
+                                              "docs": {},
+                                              "i": {
+                                                "docs": {},
+                                                "m": {
+                                                  "docs": {},
+                                                  "i": {
+                                                    "docs": {},
+                                                    "t": {
                                                       "docs": {
-                                                        "ResourceBundle.html#.getBundle": {
-                                                          "ref": "ResourceBundle.html#.getBundle",
+                                                        "ResourceBundle.html#_delimiter": {
+                                                          "ref": "ResourceBundle.html#_delimiter",
                                                           "tf": 1150
                                                         }
                                                       }
@@ -637,19 +479,19 @@ window.lunrData = {
                                                   }
                                                 }
                                               }
-                                            },
-                                            "s": {
-                                              "docs": {},
-                                              "t": {
-                                                "docs": {},
-                                                "r": {
-                                                  "docs": {
-                                                    "ResourceBundle.html#.getString": {
-                                                      "ref": "ResourceBundle.html#.getString",
-                                                      "tf": 1150
-                                                    }
-                                                  }
-                                                }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "g": {
+                                        "docs": {},
+                                        "e": {
+                                          "docs": {},
+                                          "t": {
+                                            "docs": {
+                                              "ResourceBundle.html#get": {
+                                                "ref": "ResourceBundle.html#get",
+                                                "tf": 1300
                                               }
                                             }
                                           }
@@ -676,41 +518,6 @@ window.lunrData = {
                 }
               }
             },
-            "g": {
-              "docs": {},
-              "i": {
-                "docs": {},
-                "s": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "ResourceBundle.html#.getBundle": {
-                        "ref": "ResourceBundle.html#.getBundle",
-                        "tf": 12.5
-                      },
-                      "ResourceBundle.html#.getString": {
-                        "ref": "ResourceBundle.html#.getString",
-                        "tf": 12.5
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "m": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "v": {
-                  "docs": {
-                    "MessageReader.html#.getMessage": {
-                      "ref": "MessageReader.html#.getMessage",
-                      "tf": 1.7857142857142856
-                    }
-                  }
-                }
-              }
-            },
             "t": {
               "docs": {},
               "u": {
@@ -719,10 +526,6 @@ window.lunrData = {
                   "docs": {},
                   "n": {
                     "docs": {
-                      "MessageReader.html#.getMessage": {
-                        "ref": "MessageReader.html#.getMessage",
-                        "tf": 1.7857142857142856
-                      },
                       "MessageKeyFormatter.html": {
                         "ref": "MessageKeyFormatter.html",
                         "tf": 2.631578947368421
@@ -780,58 +583,10 @@ window.lunrData = {
                   "docs": {},
                   "g": {
                     "docs": {
-                      "ResourceBundle.html#.getString": {
-                        "ref": "ResourceBundle.html#.getString",
-                        "tf": 12.5
+                      "ResourceBundle.html#get": {
+                        "ref": "ResourceBundle.html#get",
+                        "tf": 25
                       }
-                    }
-                  }
-                }
-              }
-            },
-            "o": {
-              "docs": {},
-              "p": {
-                "docs": {
-                  "MessageReader.html#.getMessage": {
-                    "ref": "MessageReader.html#.getMessage",
-                    "tf": 1.7857142857142856
-                  }
-                }
-              }
-            }
-          },
-          "e": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "r": {
-                "docs": {},
-                "c": {
-                  "docs": {},
-                  "h": {
-                    "docs": {
-                      "MessageReader.html#.getMessage": {
-                        "ref": "MessageReader.html#.getMessage",
-                        "tf": 1.7857142857142856
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "q": {
-            "docs": {},
-            "u": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "r": {
-                  "docs": {
-                    "MessageReader.html#.getMessage": {
-                      "ref": "MessageReader.html#.getMessage",
-                      "tf": 1.7857142857142856
                     }
                   }
                 }
@@ -854,78 +609,6 @@ window.lunrData = {
                       "global.html": {
                         "ref": "global.html",
                         "tf": 2045
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "e": {
-            "docs": {},
-            "t": {
-              "docs": {
-                "ResourceBundle.html#.getBundle": {
-                  "ref": "ResourceBundle.html#.getBundle",
-                  "tf": 12.5
-                },
-                "ResourceBundle.html#.getString": {
-                  "ref": "ResourceBundle.html#.getString",
-                  "tf": 12.5
-                }
-              },
-              "b": {
-                "docs": {},
-                "u": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "d": {
-                      "docs": {},
-                      "l": {
-                        "docs": {
-                          "ResourceBundle.html#.getBundle": {
-                            "ref": "ResourceBundle.html#.getBundle",
-                            "tf": 683.3333333333334
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "s": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "r": {
-                    "docs": {
-                      "ResourceBundle.html#.getString": {
-                        "ref": "ResourceBundle.html#.getString",
-                        "tf": 700
-                      }
-                    }
-                  }
-                }
-              },
-              "m": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "s": {
-                    "docs": {},
-                    "s": {
-                      "docs": {},
-                      "a": {
-                        "docs": {},
-                        "g": {
-                          "docs": {
-                            "MessageReader.html#.getMessage": {
-                              "ref": "MessageReader.html#.getMessage",
-                              "tf": 685.1190476190477
-                            }
-                          }
-                        }
                       }
                     }
                   }
@@ -995,18 +678,6 @@ window.lunrData = {
                               "docs": {},
                               "t": {
                                 "docs": {
-                                  "ResourceBundle.html#.getBundle": {
-                                    "ref": "ResourceBundle.html#.getBundle",
-                                    "tf": 33.33333333333333
-                                  },
-                                  "ResourceBundle.html#.getString": {
-                                    "ref": "ResourceBundle.html#.getString",
-                                    "tf": 50
-                                  },
-                                  "MessageReader.html#.getMessage": {
-                                    "ref": "MessageReader.html#.getMessage",
-                                    "tf": 33.33333333333333
-                                  },
                                   "MessageKeyFormatter.html#.format": {
                                     "ref": "MessageKeyFormatter.html#.format",
                                     "tf": 33.33333333333333
@@ -1022,173 +693,30 @@ window.lunrData = {
                 }
               }
             }
-          },
-          "a": {
-            "docs": {},
-            "s": {
-              "docs": {},
-              "t": {
-                "docs": {
-                  "MessageReader.html#.getMessage": {
-                    "ref": "MessageReader.html#.getMessage",
-                    "tf": 1.7857142857142856
-                  }
-                }
-              }
-            }
-          },
-          "o": {
-            "docs": {},
-            "o": {
-              "docs": {},
-              "p": {
-                "docs": {
-                  "MessageReader.html#.getMessage": {
-                    "ref": "MessageReader.html#.getMessage",
-                    "tf": 1.7857142857142856
-                  }
-                }
-              }
-            }
           }
         },
-        "b": {
+        "_": {
           "docs": {},
-          "u": {
-            "docs": {},
-            "n": {
-              "docs": {},
-              "d": {
-                "docs": {},
-                "l": {
-                  "docs": {
-                    "ResourceBundle.html#.getBundle": {
-                      "ref": "ResourceBundle.html#.getBundle",
-                      "tf": 33.33333333333333
-                    },
-                    "ResourceBundle.html#.getString": {
-                      "ref": "ResourceBundle.html#.getString",
-                      "tf": 12.5
-                    },
-                    "MessageReader.html": {
-                      "ref": "MessageReader.html",
-                      "tf": 12.5
-                    },
-                    "MessageReader.html#.getMessage": {
-                      "ref": "MessageReader.html#.getMessage",
-                      "tf": 3.571428571428571
-                    }
-                  },
-                  "e": {
-                    "docs": {},
-                    "(": {
-                      "docs": {
-                        "ResourceBundle.html#.getBundle": {
-                          "ref": "ResourceBundle.html#.getBundle",
-                          "tf": 12.5
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "a": {
-            "docs": {},
-            "c": {
-              "docs": {},
-              "k": {
-                "docs": {
-                  "MessageReader.html#.getMessage": {
-                    "ref": "MessageReader.html#.getMessage",
-                    "tf": 1.7857142857142856
-                  }
-                }
-              }
-            }
-          },
-          "r": {
+          "f": {
             "docs": {},
             "a": {
               "docs": {},
-              "c": {
-                "docs": {},
-                "k": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "MessageReader.html#.getMessage": {
-                          "ref": "MessageReader.html#.getMessage",
-                          "tf": 1.7857142857142856
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "f": {
-          "docs": {},
-          "u": {
-            "docs": {},
-            "n": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "i": {
-                    "docs": {},
-                    "o": {
-                      "docs": {},
-                      "n": {
-                        "docs": {
-                          "ResourceBundle.html#.getBundle": {
-                            "ref": "ResourceBundle.html#.getBundle",
-                            "tf": 110
-                          },
-                          "ResourceBundle.html#.getString": {
-                            "ref": "ResourceBundle.html#.getString",
-                            "tf": 110
-                          },
-                          "MessageReader.html#.getMessage": {
-                            "ref": "MessageReader.html#.getMessage",
-                            "tf": 110
-                          },
-                          "MessageKeyFormatter.html#.format": {
-                            "ref": "MessageKeyFormatter.html#.format",
-                            "tf": 110
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "a": {
-            "docs": {},
-            "l": {
-              "docs": {},
               "l": {
                 "docs": {},
-                "b": {
+                "l": {
                   "docs": {},
-                  "a": {
+                  "b": {
                     "docs": {},
-                    "c": {
+                    "a": {
                       "docs": {},
-                      "k": {
-                        "docs": {
-                          "MessageReader.html#.getMessage": {
-                            "ref": "MessageReader.html#.getMessage",
-                            "tf": 1.7857142857142856
+                      "c": {
+                        "docs": {},
+                        "k": {
+                          "docs": {
+                            "ResourceBundle.html#_fallback": {
+                              "ref": "ResourceBundle.html#_fallback",
+                              "tf": 750
+                            }
                           }
                         }
                       }
@@ -1198,33 +726,45 @@ window.lunrData = {
               }
             }
           },
-          "o": {
+          "b": {
             "docs": {},
             "u": {
               "docs": {},
               "n": {
                 "docs": {},
                 "d": {
-                  "docs": {
-                    "MessageReader.html#.getMessage": {
-                      "ref": "MessageReader.html#.getMessage",
-                      "tf": 1.7857142857142856
+                  "docs": {},
+                  "l": {
+                    "docs": {
+                      "ResourceBundle.html#_bundle": {
+                        "ref": "ResourceBundle.html#_bundle",
+                        "tf": 750
+                      }
                     }
                   }
                 }
               }
-            },
-            "r": {
+            }
+          },
+          "d": {
+            "docs": {},
+            "e": {
               "docs": {},
-              "m": {
+              "l": {
                 "docs": {},
-                "a": {
+                "i": {
                   "docs": {},
-                  "t": {
-                    "docs": {
-                      "MessageKeyFormatter.html#.format": {
-                        "ref": "MessageKeyFormatter.html#.format",
-                        "tf": 700
+                  "m": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "ResourceBundle.html#_delimiter": {
+                            "ref": "ResourceBundle.html#_delimiter",
+                            "tf": 750
+                          }
+                        }
                       }
                     }
                   }
@@ -1237,6 +777,31 @@ window.lunrData = {
           "docs": {},
           "e": {
             "docs": {},
+            "m": {
+              "docs": {},
+              "b": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "ResourceBundle.html#_fallback": {
+                        "ref": "ResourceBundle.html#_fallback",
+                        "tf": 110
+                      },
+                      "ResourceBundle.html#_bundle": {
+                        "ref": "ResourceBundle.html#_bundle",
+                        "tf": 110
+                      },
+                      "ResourceBundle.html#_delimiter": {
+                        "ref": "ResourceBundle.html#_delimiter",
+                        "tf": 110
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "s": {
               "docs": {},
               "s": {
@@ -1245,14 +810,6 @@ window.lunrData = {
                   "docs": {},
                   "g": {
                     "docs": {
-                      "MessageReader.html": {
-                        "ref": "MessageReader.html",
-                        "tf": 12.5
-                      },
-                      "MessageReader.html#.getMessage": {
-                        "ref": "MessageReader.html#.getMessage",
-                        "tf": 5.357142857142857
-                      },
                       "MessageKeyFormatter.html": {
                         "ref": "MessageKeyFormatter.html",
                         "tf": 2.631578947368421
@@ -1264,64 +821,6 @@ window.lunrData = {
                     },
                     "e": {
                       "docs": {},
-                      "r": {
-                        "docs": {},
-                        "e": {
-                          "docs": {},
-                          "a": {
-                            "docs": {},
-                            "d": {
-                              "docs": {
-                                "MessageReader.html": {
-                                  "ref": "MessageReader.html",
-                                  "tf": 1900
-                                }
-                              },
-                              "e": {
-                                "docs": {},
-                                "r": {
-                                  "docs": {},
-                                  ".": {
-                                    "docs": {},
-                                    "g": {
-                                      "docs": {},
-                                      "e": {
-                                        "docs": {},
-                                        "t": {
-                                          "docs": {},
-                                          "m": {
-                                            "docs": {},
-                                            "e": {
-                                              "docs": {},
-                                              "s": {
-                                                "docs": {},
-                                                "s": {
-                                                  "docs": {},
-                                                  "a": {
-                                                    "docs": {},
-                                                    "g": {
-                                                      "docs": {
-                                                        "MessageReader.html#.getMessage": {
-                                                          "ref": "MessageReader.html#.getMessage",
-                                                          "tf": 1150
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      },
                       ".": {
                         "docs": {},
                         "k": {
@@ -1384,7 +883,7 @@ window.lunrData = {
                                           "docs": {
                                             "MessageKeyFormatter.html": {
                                               "ref": "MessageKeyFormatter.html",
-                                              "tf": 1900
+                                              "tf": 1902.6315789473683
                                             }
                                           },
                                           "e": {
@@ -1450,19 +949,74 @@ window.lunrData = {
             }
           }
         },
-        "o": {
+        "b": {
           "docs": {},
           "u": {
             "docs": {},
-            "t": {
-              "docs": {
-                "MessageReader.html": {
-                  "ref": "MessageReader.html",
-                  "tf": 12.5
-                },
-                "MessageReader.html#.getMessage": {
-                  "ref": "MessageReader.html#.getMessage",
-                  "tf": 1.7857142857142856
+            "n": {
+              "docs": {},
+              "d": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "ResourceBundle.html#get": {
+                      "ref": "ResourceBundle.html#get",
+                      "tf": 25
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "f": {
+          "docs": {},
+          "u": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "n": {
+                        "docs": {
+                          "ResourceBundle.html#get": {
+                            "ref": "ResourceBundle.html#get",
+                            "tf": 110
+                          },
+                          "MessageKeyFormatter.html#.format": {
+                            "ref": "MessageKeyFormatter.html#.format",
+                            "tf": 110
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "m": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "MessageKeyFormatter.html#.format": {
+                        "ref": "MessageKeyFormatter.html#.format",
+                        "tf": 700
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -1474,9 +1028,9 @@ window.lunrData = {
             "docs": {},
             "y": {
               "docs": {
-                "MessageReader.html#.getMessage": {
-                  "ref": "MessageReader.html#.getMessage",
-                  "tf": 38.69047619047618
+                "ResourceBundle.html#get": {
+                  "ref": "ResourceBundle.html#get",
+                  "tf": 100
                 },
                 "MessageKeyFormatter.html": {
                   "ref": "MessageKeyFormatter.html",
@@ -1490,22 +1044,19 @@ window.lunrData = {
             }
           }
         },
-        "p": {
+        "e": {
           "docs": {},
-          "a": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "h": {
-                "docs": {
-                  "MessageReader.html#.getMessage": {
-                    "ref": "MessageReader.html#.getMessage",
-                    "tf": 1.7857142857142856
-                  }
-                }
+          "x": {
+            "docs": {
+              "MessageKeyFormatter.html": {
+                "ref": "MessageKeyFormatter.html",
+                "tf": 2.631578947368421
               }
             }
-          },
+          }
+        },
+        "p": {
+          "docs": {},
           "i": {
             "docs": {},
             "e": {
@@ -1546,29 +1097,6 @@ window.lunrData = {
         },
         "t": {
           "docs": {},
-          "h": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "u": {
-                  "docs": {},
-                  "g": {
-                    "docs": {},
-                    "h": {
-                      "docs": {
-                        "MessageReader.html#.getMessage": {
-                          "ref": "MessageReader.html#.getMessage",
-                          "tf": 1.7857142857142856
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "o": {
             "docs": {},
             "g": {
@@ -1589,103 +1117,54 @@ window.lunrData = {
               }
             }
           }
-        },
-        "w": {
-          "docs": {},
-          "r": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "p": {
-                "docs": {
-                  "MessageReader.html#.getMessage": {
-                    "ref": "MessageReader.html#.getMessage",
-                    "tf": 1.7857142857142856
-                  }
-                }
-              }
-            }
-          }
-        },
-        "e": {
-          "docs": {},
-          "x": {
-            "docs": {
-              "MessageKeyFormatter.html": {
-                "ref": "MessageKeyFormatter.html",
-                "tf": 2.631578947368421
-              }
-            }
-          }
         }
       },
-      "length": 89
+      "length": 52
     },
     "corpusTokens": [
-      "again",
+      "_bundl",
+      "_delimit",
+      "_fallback",
       "attribut",
       "augmented.j",
-      "augmented.utility.messagekeyformatt",
-      "augmented.utility.resourcebundl",
-      "back",
-      "bracket",
       "bundl",
-      "bundle(",
       "class",
       "concaten",
       "core",
       "develop",
       "document",
       "ex",
-      "fallback",
       "format",
-      "found",
       "function",
-      "get",
-      "getbundl",
-      "getmessag",
-      "getstr",
       "global",
       "ignor",
       "index",
       "key",
-      "last",
       "list",
       "list:class",
-      "loop",
       "lt;static&gt",
+      "member",
       "messag",
       "message.kind",
       "message.level",
       "messagekeyformatt",
       "messagekeyformatter.format",
-      "messageread",
-      "messagereader.getmessag",
       "miss",
       "next",
-      "out",
-      "path",
       "piec",
       "portion",
-      "read",
       "readm",
-      "real",
-      "regist",
-      "remov",
       "resourcebundl",
-      "resourcebundle.getbundl",
-      "resourcebundle.getstr",
+      "resourcebundle#_bundl",
+      "resourcebundle#_delimit",
+      "resourcebundle#_fallback",
+      "resourcebundle#get",
       "rest",
       "return",
       "rule",
-      "search",
       "simpli",
-      "squar",
-      "stop",
       "string",
-      "through",
-      "togeth",
-      "wrap"
+      "togeth"
     ],
     "pipeline": [
       "trimmer",
@@ -1735,49 +1214,48 @@ window.lunrData = {
       "name": "ResourceBundle",
       "tags": "ResourceBundle",
       "summary": "",
-      "description": "Augmented.Utility.ResourceBundle",
+      "description": "ResourceBundle",
       "body": ""
     },
-    "ResourceBundle.html#.getBundle": {
-      "id": "ResourceBundle.html#.getBundle",
-      "kind": "function",
-      "title": "&lt;static&gt; getBundle( bundle )",
-      "longname": "ResourceBundle.getBundle",
-      "name": "getBundle",
-      "tags": "ResourceBundle.getBundle getBundle",
+    "ResourceBundle.html#_fallback": {
+      "id": "ResourceBundle.html#_fallback",
+      "kind": "member",
+      "title": "_fallback",
+      "longname": "ResourceBundle#_fallback",
+      "name": "_fallback",
+      "tags": "ResourceBundle#_fallback _fallback",
       "summary": "",
-      "description": "Gets the bundle(s) and registers to Augmented.Utility.ResourceBundle"
+      "description": ""
     },
-    "ResourceBundle.html#.getString": {
-      "id": "ResourceBundle.html#.getString",
-      "kind": "function",
-      "title": "&lt;static&gt; getString()",
-      "longname": "ResourceBundle.getString",
-      "name": "getString",
-      "tags": "ResourceBundle.getString getString",
+    "ResourceBundle.html#_bundle": {
+      "id": "ResourceBundle.html#_bundle",
+      "kind": "member",
+      "title": "_bundle",
+      "longname": "ResourceBundle#_bundle",
+      "name": "_bundle",
+      "tags": "ResourceBundle#_bundle _bundle",
       "summary": "",
-      "description": "Gets a string from the registered bundle"
+      "description": ""
     },
-    "MessageReader.html": {
-      "id": "MessageReader.html",
-      "kind": "class",
-      "title": "MessageReader",
-      "longname": "MessageReader",
-      "name": "MessageReader",
-      "tags": "MessageReader",
+    "ResourceBundle.html#_delimiter": {
+      "id": "ResourceBundle.html#_delimiter",
+      "kind": "member",
+      "title": "_delimiter",
+      "longname": "ResourceBundle#_delimiter",
+      "name": "_delimiter",
+      "tags": "ResourceBundle#_delimiter _delimiter",
       "summary": "",
-      "description": "Reads a message out of the bundle",
-      "body": ""
+      "description": ""
     },
-    "MessageReader.html#.getMessage": {
-      "id": "MessageReader.html#.getMessage",
+    "ResourceBundle.html#get": {
+      "id": "ResourceBundle.html#get",
       "kind": "function",
-      "title": "&lt;static&gt; getMessage( key )",
-      "longname": "MessageReader.getMessage",
-      "name": "getMessage",
-      "tags": "MessageReader.getMessage getMessage",
+      "title": "get( key )",
+      "longname": "ResourceBundle#get",
+      "name": "get",
+      "tags": "ResourceBundle#get get",
       "summary": "",
-      "description": "getMessage - get the message out of the bundle. If message is not found, then ResourceBundle returns the key wrapped in square brackets loop through the fallback path of the key by removing the last attribute and searching the bundle again stop when you get back a real message (not just the [key])"
+      "description": "Get a string from the bundle"
     },
     "MessageKeyFormatter.html": {
       "id": "MessageKeyFormatter.html",
@@ -1787,7 +1265,7 @@ window.lunrData = {
       "name": "MessageKeyFormatter",
       "tags": "MessageKeyFormatter",
       "summary": "",
-      "description": "Augmented.Utility.MessageKeyFormatter Concatenate the pieces of the message together if a portion of the key is missing, the rest of the key is ignored. ex. if the \"rule\" attribute is missing, then the key will return with the message.level + message.kind only",
+      "description": "MessageKeyFormatter Concatenate the pieces of the message together if a portion of the key is missing, the rest of the key is ignored. ex. if the \"rule\" attribute is missing, then the key will return with the message.level + message.kind only",
       "body": ""
     },
     "MessageKeyFormatter.html#.format": {
