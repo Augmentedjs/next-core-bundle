@@ -6,6 +6,7 @@ replaceAll.shim(); // will be a no-op if not needed
  */
 export class MapFormatter {
   constructor() {
+    console.warn("Do not create an instance, class is static.");
   };
 
   /**

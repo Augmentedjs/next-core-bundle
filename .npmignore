@@ -1,6 +1,6 @@
 # OS X
 .DS_Store
-src/*  // Include for now as a makeshift es module
+src/*
 data
 test
 devserver.js
