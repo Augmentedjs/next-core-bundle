@@ -1,6 +1,6 @@
 # OS X
 .DS_Store
-# src/*  // Include for now as a makeshift es module
+src/*  // Include for now as a makeshift es module
 data
 test
 devserver.js
@@ -9,5 +9,6 @@ webpack.config.js
 .babelrc
 jsdoc
 .babelrc
-jsdoc.config.json
+jsdoc.conf.json
 public
+temp

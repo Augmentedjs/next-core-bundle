@@ -1,6 +1,6 @@
 {
   "name": "next-core-bundle",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "description": "The Augmented.js Next - Resource Bundle.",
   "main": "dist/next-core-bundle.js",
   "scripts": {
@@ -22,7 +22,9 @@
   },
   "keywords": [
     "augmentedjs",
-    "core"
+    "core",
+    "i18n",
+    "bundle"
   ],
   "author": "Bob Warren <jedi.master@augmentedjs.com> (http://www.augmentedjs.com)",
   "license": "Apache-2.0",

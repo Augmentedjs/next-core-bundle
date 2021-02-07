@@ -29,11 +29,11 @@ module.exports = {
     ]
   },
   externals: {
-    "i18next": {
-      commonjs: "i18next",
-      commonjs2: "i18next",
-      amd: "i18next",
-      root: "i18next"
+    "string.prototype.replaceall": {
+      commonjs: "string.prototype.replaceall",
+      commonjs2: "string.prototype.replaceall",
+      amd: "string.prototype.replaceall",
+      root: "string.prototype.replaceall"
     }
   },
   stats: "errors-only",
