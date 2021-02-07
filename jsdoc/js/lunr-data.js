@@ -58,6 +58,34 @@ window.lunrData = {
           "list",
           "list:class"
         ],
+        "MapFormatter.html": [
+          "class",
+          "json",
+          "key",
+          "map",
+          "mapformatt",
+          "new",
+          "object",
+          "text"
+        ],
+        "MapFormatter.html#.format": [
+          "format",
+          "function",
+          "instanc",
+          "json",
+          "key",
+          "lt;static&gt",
+          "mapformatter.format",
+          "mark",
+          "messag",
+          "name",
+          "object",
+          "replac",
+          "replaced",
+          "string",
+          "test",
+          "withth"
+        ],
         "ResourceBundle.html": [
           "class",
           "resourcebundl"
@@ -112,7 +140,7 @@ window.lunrData = {
           "messagekeyformatter.format"
         ]
       },
-      "length": 10
+      "length": 12
     },
     "tokenStore": {
       "root": {
@@ -232,6 +260,10 @@ window.lunrData = {
                       "ref": "list_class.html",
                       "tf": 635
                     },
+                    "MapFormatter.html": {
+                      "ref": "MapFormatter.html",
+                      "tf": 110
+                    },
                     "ResourceBundle.html": {
                       "ref": "ResourceBundle.html",
                       "tf": 110
@@ -319,6 +351,26 @@ window.lunrData = {
                   }
                 }
               }
+            },
+            "s": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "c": {
+                      "docs": {
+                        "MapFormatter.html#.format": {
+                          "ref": "MapFormatter.html#.format",
+                          "tf": 4.166666666666666
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           },
           "g": {
@@ -353,6 +405,28 @@ window.lunrData = {
                   }
                 }
               }
+            },
+            "w": {
+              "docs": {
+                "MapFormatter.html": {
+                  "ref": "MapFormatter.html",
+                  "tf": 7.142857142857142
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "MapFormatter.html#.format": {
+                    "ref": "MapFormatter.html#.format",
+                    "tf": 4.166666666666666
+                  }
+                }
+              }
             }
           }
         },
@@ -369,6 +443,34 @@ window.lunrData = {
                     "index.html": {
                       "ref": "index.html",
                       "tf": 110
+                    }
+                  }
+                }
+              }
+            },
+            "p": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "c": {
+                    "docs": {
+                      "MapFormatter.html#.format": {
+                        "ref": "MapFormatter.html#.format",
+                        "tf": 33.33333333333333
+                      }
+                    },
+                    "e": {
+                      "docs": {},
+                      "d": {
+                        "docs": {
+                          "MapFormatter.html#.format": {
+                            "ref": "MapFormatter.html#.format",
+                            "tf": 4.166666666666666
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -583,6 +685,10 @@ window.lunrData = {
                   "docs": {},
                   "g": {
                     "docs": {
+                      "MapFormatter.html#.format": {
+                        "ref": "MapFormatter.html#.format",
+                        "tf": 4.166666666666666
+                      },
                       "ResourceBundle.html#get": {
                         "ref": "ResourceBundle.html#get",
                         "tf": 25
@@ -678,6 +784,10 @@ window.lunrData = {
                               "docs": {},
                               "t": {
                                 "docs": {
+                                  "MapFormatter.html#.format": {
+                                    "ref": "MapFormatter.html#.format",
+                                    "tf": 25
+                                  },
                                   "MessageKeyFormatter.html#.format": {
                                     "ref": "MessageKeyFormatter.html#.format",
                                     "tf": 33.33333333333333
@@ -695,27 +805,118 @@ window.lunrData = {
             }
           }
         },
-        "_": {
+        "j": {
           "docs": {},
-          "f": {
+          "s": {
             "docs": {},
-            "a": {
+            "o": {
               "docs": {},
-              "l": {
+              "n": {
+                "docs": {
+                  "MapFormatter.html": {
+                    "ref": "MapFormatter.html",
+                    "tf": 7.142857142857142
+                  },
+                  "MapFormatter.html#.format": {
+                    "ref": "MapFormatter.html#.format",
+                    "tf": 4.166666666666666
+                  }
+                }
+              }
+            }
+          }
+        },
+        "k": {
+          "docs": {},
+          "e": {
+            "docs": {},
+            "y": {
+              "docs": {
+                "MapFormatter.html": {
+                  "ref": "MapFormatter.html",
+                  "tf": 7.142857142857142
+                },
+                "MapFormatter.html#.format": {
+                  "ref": "MapFormatter.html#.format",
+                  "tf": 4.166666666666666
+                },
+                "ResourceBundle.html#get": {
+                  "ref": "ResourceBundle.html#get",
+                  "tf": 100
+                },
+                "MessageKeyFormatter.html": {
+                  "ref": "MessageKeyFormatter.html",
+                  "tf": 7.894736842105263
+                },
+                "MessageKeyFormatter.html#.format": {
+                  "ref": "MessageKeyFormatter.html#.format",
+                  "tf": 16.666666666666664
+                }
+              }
+            }
+          }
+        },
+        "m": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "p": {
+              "docs": {
+                "MapFormatter.html": {
+                  "ref": "MapFormatter.html",
+                  "tf": 7.142857142857142
+                }
+              },
+              "f": {
                 "docs": {},
-                "l": {
+                "o": {
                   "docs": {},
-                  "b": {
+                  "r": {
                     "docs": {},
-                    "a": {
+                    "m": {
                       "docs": {},
-                      "c": {
+                      "a": {
                         "docs": {},
-                        "k": {
-                          "docs": {
-                            "ResourceBundle.html#_fallback": {
-                              "ref": "ResourceBundle.html#_fallback",
-                              "tf": 750
+                        "t": {
+                          "docs": {},
+                          "t": {
+                            "docs": {
+                              "MapFormatter.html": {
+                                "ref": "MapFormatter.html",
+                                "tf": 1907.142857142857
+                              }
+                            },
+                            "e": {
+                              "docs": {},
+                              "r": {
+                                "docs": {},
+                                ".": {
+                                  "docs": {},
+                                  "f": {
+                                    "docs": {},
+                                    "o": {
+                                      "docs": {},
+                                      "r": {
+                                        "docs": {},
+                                        "m": {
+                                          "docs": {},
+                                          "a": {
+                                            "docs": {},
+                                            "t": {
+                                              "docs": {
+                                                "MapFormatter.html#.format": {
+                                                  "ref": "MapFormatter.html#.format",
+                                                  "tf": 1150
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
                             }
                           }
                         }
@@ -724,84 +925,21 @@ window.lunrData = {
                   }
                 }
               }
-            }
-          },
-          "b": {
-            "docs": {},
-            "u": {
+            },
+            "r": {
               "docs": {},
-              "n": {
-                "docs": {},
-                "d": {
-                  "docs": {},
-                  "l": {
-                    "docs": {
-                      "ResourceBundle.html#_bundle": {
-                        "ref": "ResourceBundle.html#_bundle",
-                        "tf": 750
-                      }
-                    }
+              "k": {
+                "docs": {
+                  "MapFormatter.html#.format": {
+                    "ref": "MapFormatter.html#.format",
+                    "tf": 4.166666666666666
                   }
                 }
               }
             }
           },
-          "d": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "l": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "m": {
-                    "docs": {},
-                    "i": {
-                      "docs": {},
-                      "t": {
-                        "docs": {
-                          "ResourceBundle.html#_delimiter": {
-                            "ref": "ResourceBundle.html#_delimiter",
-                            "tf": 750
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "m": {
-          "docs": {},
           "e": {
             "docs": {},
-            "m": {
-              "docs": {},
-              "b": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "r": {
-                    "docs": {
-                      "ResourceBundle.html#_fallback": {
-                        "ref": "ResourceBundle.html#_fallback",
-                        "tf": 110
-                      },
-                      "ResourceBundle.html#_bundle": {
-                        "ref": "ResourceBundle.html#_bundle",
-                        "tf": 110
-                      },
-                      "ResourceBundle.html#_delimiter": {
-                        "ref": "ResourceBundle.html#_delimiter",
-                        "tf": 110
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "s": {
               "docs": {},
               "s": {
@@ -810,6 +948,10 @@ window.lunrData = {
                   "docs": {},
                   "g": {
                     "docs": {
+                      "MapFormatter.html#.format": {
+                        "ref": "MapFormatter.html#.format",
+                        "tf": 25
+                      },
                       "MessageKeyFormatter.html": {
                         "ref": "MessageKeyFormatter.html",
                         "tf": 2.631578947368421
@@ -932,6 +1074,31 @@ window.lunrData = {
                   }
                 }
               }
+            },
+            "m": {
+              "docs": {},
+              "b": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "ResourceBundle.html#_fallback": {
+                        "ref": "ResourceBundle.html#_fallback",
+                        "tf": 110
+                      },
+                      "ResourceBundle.html#_bundle": {
+                        "ref": "ResourceBundle.html#_bundle",
+                        "tf": 110
+                      },
+                      "ResourceBundle.html#_delimiter": {
+                        "ref": "ResourceBundle.html#_delimiter",
+                        "tf": 110
+                      }
+                    }
+                  }
+                }
+              }
             }
           },
           "i": {
@@ -943,6 +1110,243 @@ window.lunrData = {
                   "MessageKeyFormatter.html": {
                     "ref": "MessageKeyFormatter.html",
                     "tf": 5.263157894736842
+                  }
+                }
+              }
+            }
+          }
+        },
+        "o": {
+          "docs": {},
+          "b": {
+            "docs": {},
+            "j": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "c": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "MapFormatter.html": {
+                        "ref": "MapFormatter.html",
+                        "tf": 7.142857142857142
+                      },
+                      "MapFormatter.html#.format": {
+                        "ref": "MapFormatter.html#.format",
+                        "tf": 4.166666666666666
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "t": {
+          "docs": {},
+          "e": {
+            "docs": {},
+            "x": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "MapFormatter.html": {
+                    "ref": "MapFormatter.html",
+                    "tf": 7.142857142857142
+                  }
+                }
+              }
+            },
+            "s": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "MapFormatter.html#.format": {
+                    "ref": "MapFormatter.html#.format",
+                    "tf": 4.166666666666666
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "g": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "h": {
+                    "docs": {
+                      "MessageKeyFormatter.html": {
+                        "ref": "MessageKeyFormatter.html",
+                        "tf": 2.631578947368421
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "f": {
+          "docs": {},
+          "o": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "m": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "MapFormatter.html#.format": {
+                        "ref": "MapFormatter.html#.format",
+                        "tf": 675
+                      },
+                      "MessageKeyFormatter.html#.format": {
+                        "ref": "MessageKeyFormatter.html#.format",
+                        "tf": 700
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "n": {
+                        "docs": {
+                          "MapFormatter.html#.format": {
+                            "ref": "MapFormatter.html#.format",
+                            "tf": 110
+                          },
+                          "ResourceBundle.html#get": {
+                            "ref": "ResourceBundle.html#get",
+                            "tf": 110
+                          },
+                          "MessageKeyFormatter.html#.format": {
+                            "ref": "MessageKeyFormatter.html#.format",
+                            "tf": 110
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "w": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "h": {
+                    "docs": {
+                      "MapFormatter.html#.format": {
+                        "ref": "MapFormatter.html#.format",
+                        "tf": 4.166666666666666
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "_": {
+          "docs": {},
+          "f": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "l": {
+                  "docs": {},
+                  "b": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "c": {
+                        "docs": {},
+                        "k": {
+                          "docs": {
+                            "ResourceBundle.html#_fallback": {
+                              "ref": "ResourceBundle.html#_fallback",
+                              "tf": 750
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "b": {
+            "docs": {},
+            "u": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "d": {
+                  "docs": {},
+                  "l": {
+                    "docs": {
+                      "ResourceBundle.html#_bundle": {
+                        "ref": "ResourceBundle.html#_bundle",
+                        "tf": 750
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "d": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "m": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "ResourceBundle.html#_delimiter": {
+                            "ref": "ResourceBundle.html#_delimiter",
+                            "tf": 750
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -964,81 +1368,6 @@ window.lunrData = {
                       "tf": 25
                     }
                   }
-                }
-              }
-            }
-          }
-        },
-        "f": {
-          "docs": {},
-          "u": {
-            "docs": {},
-            "n": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "i": {
-                    "docs": {},
-                    "o": {
-                      "docs": {},
-                      "n": {
-                        "docs": {
-                          "ResourceBundle.html#get": {
-                            "ref": "ResourceBundle.html#get",
-                            "tf": 110
-                          },
-                          "MessageKeyFormatter.html#.format": {
-                            "ref": "MessageKeyFormatter.html#.format",
-                            "tf": 110
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "o": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "m": {
-                "docs": {},
-                "a": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "MessageKeyFormatter.html#.format": {
-                        "ref": "MessageKeyFormatter.html#.format",
-                        "tf": 700
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "k": {
-          "docs": {},
-          "e": {
-            "docs": {},
-            "y": {
-              "docs": {
-                "ResourceBundle.html#get": {
-                  "ref": "ResourceBundle.html#get",
-                  "tf": 100
-                },
-                "MessageKeyFormatter.html": {
-                  "ref": "MessageKeyFormatter.html",
-                  "tf": 7.894736842105263
-                },
-                "MessageKeyFormatter.html#.format": {
-                  "ref": "MessageKeyFormatter.html#.format",
-                  "tf": 16.666666666666664
                 }
               }
             }
@@ -1094,32 +1423,9 @@ window.lunrData = {
               }
             }
           }
-        },
-        "t": {
-          "docs": {},
-          "o": {
-            "docs": {},
-            "g": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "h": {
-                    "docs": {
-                      "MessageKeyFormatter.html": {
-                        "ref": "MessageKeyFormatter.html",
-                        "tf": 2.631578947368421
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
         }
       },
-      "length": 52
+      "length": 76
     },
     "corpusTokens": [
       "_bundl",
@@ -1139,10 +1445,16 @@ window.lunrData = {
       "global",
       "ignor",
       "index",
+      "instanc",
+      "json",
       "key",
       "list",
       "list:class",
       "lt;static&gt",
+      "map",
+      "mapformatt",
+      "mapformatter.format",
+      "mark",
       "member",
       "messag",
       "message.kind",
@@ -1150,10 +1462,15 @@ window.lunrData = {
       "messagekeyformatt",
       "messagekeyformatter.format",
       "miss",
+      "name",
+      "new",
       "next",
+      "object",
       "piec",
       "portion",
       "readm",
+      "replac",
+      "replaced",
       "resourcebundl",
       "resourcebundle#_bundl",
       "resourcebundle#_delimit",
@@ -1164,7 +1481,10 @@ window.lunrData = {
       "rule",
       "simpli",
       "string",
-      "togeth"
+      "test",
+      "text",
+      "togeth",
+      "withth"
     ],
     "pipeline": [
       "trimmer",
@@ -1205,6 +1525,27 @@ window.lunrData = {
       "summary": "All documented classes.",
       "description": "",
       "body": ""
+    },
+    "MapFormatter.html": {
+      "id": "MapFormatter.html",
+      "kind": "class",
+      "title": "MapFormatter",
+      "longname": "MapFormatter",
+      "name": "MapFormatter",
+      "tags": "MapFormatter",
+      "summary": "",
+      "description": "MapFormatter - maps a JSON object of keys to new text",
+      "body": ""
+    },
+    "MapFormatter.html#.format": {
+      "id": "MapFormatter.html#.format",
+      "kind": "function",
+      "title": "&lt;static&gt; format( message, replacements )",
+      "longname": "MapFormatter.format",
+      "name": "format",
+      "tags": "MapFormatter.format format",
+      "summary": "",
+      "description": "Replaces a string with replacedment test from a JSON object. Will replace all instances marked withthe key name"
     },
     "ResourceBundle.html": {
       "id": "ResourceBundle.html",

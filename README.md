@@ -32,6 +32,10 @@ This library is Deprecated and will end of life with v3.x
         -   [Properties](#properties-6)
     -   [format](#format-1)
         -   [Parameters](#parameters-4)
+-   [MapFormatter](#mapformatter)
+    -   [format](#format-2)
+        -   [Parameters](#parameters-5)
+        -   [Examples](#examples)
 
 ## ResourceBundle
 
@@ -118,3 +122,25 @@ Format a key for a message
 -   `message` **message** The message to format (optional, default `{}`)
 
 Returns **any** The key to lookup in a bundle
+
+## MapFormatter
+
+MapFormatter - maps a JSON object of keys to new text
+
+### format
+
+Replaces a string with replacedment test from a JSON object.  
+Will replace all instances marked withthe key name
+
+#### Parameters
+
+-   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The original string
+-   `replacements` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Object with replacement strings
+
+#### Examples
+
+```javascript
+const message = MapFormatter.format("This is a test of {ebs}.", { "ebs": "the Emergency Broadcast System" });
+```
+
+Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Returns the string with replaced text
