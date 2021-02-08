@@ -20,7 +20,7 @@
     },
     "test": {
       "plugins": [
-        ["transform-remove-console", { "exclude": [ "info", "error", "warn"] }]
+        ["transform-remove-console", { "exclude": [ "debug", "info", "error", "warn"] }]
       ],
       "presets": [
         ["@babel/preset-env", {

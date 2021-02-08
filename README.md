@@ -33,14 +33,13 @@ This allows you to write programs that can:
     -   [Properties](#properties-5)
 -   [MessageKeyFormatter](#messagekeyformatter)
     -   [Parameters](#parameters-2)
+    -   [\_delimiter](#_delimiter-1)
+        -   [Properties](#properties-6)
     -   [format](#format)
         -   [Parameters](#parameters-3)
-        -   [Properties](#properties-6)
+-   [MapFormatter](#mapformatter)
     -   [format](#format-1)
         -   [Parameters](#parameters-4)
--   [MapFormatter](#mapformatter)
-    -   [format](#format-2)
-        -   [Parameters](#parameters-5)
         -   [Examples](#examples)
 
 ## ResourceBundle
@@ -71,11 +70,13 @@ ResourceBundle
 
 ### get
 
-Get a string from the bundle
+Get a string from the bundle by key
 
 #### Parameters
 
 -   `key` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The key to find in the bundle
+
+Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Message from bundle, [key] if not found, or null if missing the key
 
 ## 
 
@@ -87,13 +88,13 @@ Get a string from the bundle
 
 ### Properties
 
--   `language` **language** The language
+-   `language` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The language
 
 ## 
 
 ### Properties
 
--   `country` **country** The country
+-   `country` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The country
 
 ## MessageKeyFormatter
 
@@ -107,13 +108,9 @@ missing, then the key will return with the message.level + message.kind only</em
 
 -   `options`   (optional, default `{}`)
 
-### format
+### \_delimiter
 
 Key Delimiter
-
-#### Parameters
-
--   `message`   (optional, default `{}`)
 
 #### Properties
 
@@ -125,18 +122,18 @@ Format a key for a message
 
 #### Parameters
 
--   `message` **message** The message to format (optional, default `{}`)
+-   `message` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The message to format (optional, default `{}`)
 
 Returns **any** The key to lookup in a bundle
 
 ## MapFormatter
 
-MapFormatter - maps a JSON object of keys to new text
+MapFormatter - Maps a JSON object of keys to new text
 
 ### format
 
-Replaces a string with replacedment test from a JSON object.  
-Will replace all instances marked withthe key name
+Replaces a string with replacement text from a JSON object.  
+Will replace all instances marked with the key name
 
 #### Parameters
 

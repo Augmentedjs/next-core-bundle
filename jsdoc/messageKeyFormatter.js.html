@@ -108,18 +108,18 @@
  */
 export class MessageKeyFormatter {
   constructor(options = {}) {
+    /**
+     * Key Delimiter
+     * @property {string} delimiter The delimter used to seperate each key
+     */
     this._delimiter = (options.delimiter) ? options.delimiter : ".";
   };
 
   /**
-  * Key Delimiter
-  * @property {string} delimiter The delimter used to seperate each key
-  */
-
-  /**
    * Format a key for a message
-   * @param {message} message The message to format
+   * @param {object} message The message to format
    * @returns The key to lookup in a bundle
+   * @static
    */
   static format(message = {}) {
     let key = "";

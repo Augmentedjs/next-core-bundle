@@ -36,12 +36,12 @@ export class ResourceBundle {
      * @property {string} locale The locale
      */
 
-     /**
-     * @property {language} language The language
+    /**
+     * @property {string} language The language
      */
 
-     /**
-     * @property {country} country The country
+    /**
+     * @property {string} country The country
      */
   };
 
@@ -62,14 +62,15 @@ export class ResourceBundle {
   };
 
   /**
-   * Get a string from the bundle
+   * Get a string from the bundle by key
    * @param {string} key The key to find in the bundle
+   * @returns {string} Message from bundle, [key] if not found, or null if missing the key
    */
   get(key) {
     if (key) {
       const msg = this._getMessage(this.bundle[this.locale], key);
       let fallback = null;
-      if (!msg || msg === `[${key}]`) {
+      if (this._fallback && (!msg || msg === `[${key}]`)) {
         fallback = this._getMessage(this.bundle[this.language], key);
       }
       console.debug("get call msg", msg, fallback, this._fallback);
@@ -104,7 +105,7 @@ export class ResourceBundle {
    * @private
    */
   _getMessage(bundle, key) {
-    if (bundle && key) {
+    if (this._fallback && (bundle && key)) {
       // try getting the message out of the bundle
       let msg = bundle[key],
       last = key.length,
@@ -126,6 +127,8 @@ export class ResourceBundle {
       // message
       // otherwise return the original key with square brackets
       return key ? msg : `[${originalKey}]`;
+    } else if (bundle && key) {
+      return (bundle[key]) ? bundle[key] : null;
     }
     return null;
   };

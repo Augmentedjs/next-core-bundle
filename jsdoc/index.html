@@ -142,24 +142,23 @@
 <li><a href="#messagekeyformatter">MessageKeyFormatter</a>
 <ul>
 <li><a href="#parameters-2">Parameters</a></li>
-<li><a href="#format">format</a>
+<li><a href="#_delimiter-1">_delimiter</a>
 <ul>
-<li><a href="#parameters-3">Parameters</a></li>
 <li><a href="#properties-6">Properties</a></li>
 </ul>
 </li>
-<li><a href="#format-1">format</a>
+<li><a href="#format">format</a>
 <ul>
-<li><a href="#parameters-4">Parameters</a></li>
+<li><a href="#parameters-3">Parameters</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><a href="#mapformatter">MapFormatter</a>
 <ul>
-<li><a href="#format-2">format</a>
+<li><a href="#format-1">format</a>
 <ul>
-<li><a href="#parameters-5">Parameters</a></li>
+<li><a href="#parameters-4">Parameters</a></li>
 <li><a href="#examples">Examples</a></li>
 </ul>
 </li>
@@ -188,11 +187,12 @@
 <li><code>delimiter</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></strong> The key delimiter (if fallback is enabled)</li>
 </ul>
 <h3>get</h3>
-<p>Get a string from the bundle</p>
+<p>Get a string from the bundle by key</p>
 <h4>Parameters</h4>
 <ul>
 <li><code>key</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></strong> The key to find in the bundle</li>
 </ul>
+<p>Returns <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></strong> Message from bundle, [key] if not found, or null if missing the key</p>
 <h2></h2>
 <h3>Properties</h3>
 <ul>
@@ -201,12 +201,12 @@
 <h2></h2>
 <h3>Properties</h3>
 <ul>
-<li><code>language</code> <strong>language</strong> The language</li>
+<li><code>language</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></strong> The language</li>
 </ul>
 <h2></h2>
 <h3>Properties</h3>
 <ul>
-<li><code>country</code> <strong>country</strong> The country</li>
+<li><code>country</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></strong> The country</li>
 </ul>
 <h2>MessageKeyFormatter</h2>
 <p>MessageKeyFormatter<br/>
@@ -217,12 +217,8 @@ missing, then the key will return with the message.level + message.kind only</em
 <ul>
 <li><code>options</code>   (optional, default <code>{}</code>)</li>
 </ul>
-<h3>format</h3>
+<h3>_delimiter</h3>
 <p>Key Delimiter</p>
-<h4>Parameters</h4>
-<ul>
-<li><code>message</code>   (optional, default <code>{}</code>)</li>
-</ul>
 <h4>Properties</h4>
 <ul>
 <li><code>delimiter</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></strong> The delimter used to seperate each key</li>
@@ -231,14 +227,14 @@ missing, then the key will return with the message.level + message.kind only</em
 <p>Format a key for a message</p>
 <h4>Parameters</h4>
 <ul>
-<li><code>message</code> <strong>message</strong> The message to format (optional, default <code>{}</code>)</li>
+<li><code>message</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> The message to format (optional, default <code>{}</code>)</li>
 </ul>
 <p>Returns <strong>any</strong> The key to lookup in a bundle</p>
 <h2>MapFormatter</h2>
-<p>MapFormatter - maps a JSON object of keys to new text</p>
+<p>MapFormatter - Maps a JSON object of keys to new text</p>
 <h3>format</h3>
-<p>Replaces a string with replacedment test from a JSON object.<br>
-Will replace all instances marked withthe key name</p>
+<p>Replaces a string with replacement text from a JSON object.<br>
+Will replace all instances marked with the key name</p>
 <h4>Parameters</h4>
 <ul>
 <li><code>message</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></strong> The original string</li>

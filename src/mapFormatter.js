@@ -2,7 +2,7 @@ import replaceAll from "string.prototype.replaceall";
 replaceAll.shim(); // will be a no-op if not needed
 
 /**
- * MapFormatter - maps a JSON object of keys to new text
+ * MapFormatter - Maps a JSON object of keys to new text
  */
 export class MapFormatter {
   constructor() {
@@ -10,8 +10,8 @@ export class MapFormatter {
   };
 
   /**
-   * Replaces a string with replacedment test from a JSON object.  
-   * Will replace all instances marked withthe key name
+   * Replaces a string with replacement text from a JSON object.  
+   * Will replace all instances marked with the key name
    * @param {string} message The original string 
    * @param {object} replacements Object with replacement strings
    * @returns {string} Returns the string with replaced text

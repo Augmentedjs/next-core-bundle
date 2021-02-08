@@ -81,10 +81,8 @@ window.lunrData = {
           "name",
           "object",
           "replac",
-          "replaced",
           "string",
-          "test",
-          "withth"
+          "text"
         ],
         "ResourceBundle.html": [
           "class",
@@ -131,6 +129,13 @@ window.lunrData = {
           "rule",
           "togeth"
         ],
+        "MessageKeyFormatter.html#_delimiter": [
+          "_delimit",
+          "delimit",
+          "key",
+          "member",
+          "messagekeyformatter#_delimit"
+        ],
         "MessageKeyFormatter.html#.format": [
           "format",
           "function",
@@ -140,7 +145,7 @@ window.lunrData = {
           "messagekeyformatter.format"
         ]
       },
-      "length": 12
+      "length": 13
     },
     "tokenStore": {
       "root": {
@@ -301,6 +306,26 @@ window.lunrData = {
                   }
                 }
               }
+            },
+            "l": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "m": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "MessageKeyFormatter.html#_delimiter": {
+                          "ref": "MessageKeyFormatter.html#_delimiter",
+                          "tf": 25
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           },
           "o": {
@@ -364,7 +389,7 @@ window.lunrData = {
                       "docs": {
                         "MapFormatter.html#.format": {
                           "ref": "MapFormatter.html#.format",
-                          "tf": 4.166666666666666
+                          "tf": 4.545454545454546
                         }
                       }
                     }
@@ -423,7 +448,7 @@ window.lunrData = {
                 "docs": {
                   "MapFormatter.html#.format": {
                     "ref": "MapFormatter.html#.format",
-                    "tf": 4.166666666666666
+                    "tf": 4.545454545454546
                   }
                 }
               }
@@ -458,18 +483,7 @@ window.lunrData = {
                     "docs": {
                       "MapFormatter.html#.format": {
                         "ref": "MapFormatter.html#.format",
-                        "tf": 33.33333333333333
-                      }
-                    },
-                    "e": {
-                      "docs": {},
-                      "d": {
-                        "docs": {
-                          "MapFormatter.html#.format": {
-                            "ref": "MapFormatter.html#.format",
-                            "tf": 4.166666666666666
-                          }
-                        }
+                        "tf": 38.63636363636363
                       }
                     }
                   }
@@ -687,11 +701,11 @@ window.lunrData = {
                     "docs": {
                       "MapFormatter.html#.format": {
                         "ref": "MapFormatter.html#.format",
-                        "tf": 4.166666666666666
+                        "tf": 4.545454545454546
                       },
                       "ResourceBundle.html#get": {
                         "ref": "ResourceBundle.html#get",
-                        "tf": 25
+                        "tf": 16.666666666666664
                       }
                     }
                   }
@@ -819,7 +833,7 @@ window.lunrData = {
                   },
                   "MapFormatter.html#.format": {
                     "ref": "MapFormatter.html#.format",
-                    "tf": 4.166666666666666
+                    "tf": 4.545454545454546
                   }
                 }
               }
@@ -838,15 +852,19 @@ window.lunrData = {
                 },
                 "MapFormatter.html#.format": {
                   "ref": "MapFormatter.html#.format",
-                  "tf": 4.166666666666666
+                  "tf": 4.545454545454546
                 },
                 "ResourceBundle.html#get": {
                   "ref": "ResourceBundle.html#get",
-                  "tf": 100
+                  "tf": 116.66666666666666
                 },
                 "MessageKeyFormatter.html": {
                   "ref": "MessageKeyFormatter.html",
                   "tf": 7.894736842105263
+                },
+                "MessageKeyFormatter.html#_delimiter": {
+                  "ref": "MessageKeyFormatter.html#_delimiter",
+                  "tf": 25
                 },
                 "MessageKeyFormatter.html#.format": {
                   "ref": "MessageKeyFormatter.html#.format",
@@ -932,7 +950,7 @@ window.lunrData = {
                 "docs": {
                   "MapFormatter.html#.format": {
                     "ref": "MapFormatter.html#.format",
-                    "tf": 4.166666666666666
+                    "tf": 4.545454545454546
                   }
                 }
               }
@@ -1032,6 +1050,38 @@ window.lunrData = {
                                             "docs": {},
                                             "r": {
                                               "docs": {},
+                                              "#": {
+                                                "docs": {},
+                                                "_": {
+                                                  "docs": {},
+                                                  "d": {
+                                                    "docs": {},
+                                                    "e": {
+                                                      "docs": {},
+                                                      "l": {
+                                                        "docs": {},
+                                                        "i": {
+                                                          "docs": {},
+                                                          "m": {
+                                                            "docs": {},
+                                                            "i": {
+                                                              "docs": {},
+                                                              "t": {
+                                                                "docs": {
+                                                                  "MessageKeyFormatter.html#_delimiter": {
+                                                                    "ref": "MessageKeyFormatter.html#_delimiter",
+                                                                    "tf": 1150
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              },
                                               ".": {
                                                 "docs": {},
                                                 "f": {
@@ -1094,6 +1144,10 @@ window.lunrData = {
                       "ResourceBundle.html#_delimiter": {
                         "ref": "ResourceBundle.html#_delimiter",
                         "tf": 110
+                      },
+                      "MessageKeyFormatter.html#_delimiter": {
+                        "ref": "MessageKeyFormatter.html#_delimiter",
+                        "tf": 110
                       }
                     }
                   }
@@ -1134,7 +1188,7 @@ window.lunrData = {
                       },
                       "MapFormatter.html#.format": {
                         "ref": "MapFormatter.html#.format",
-                        "tf": 4.166666666666666
+                        "tf": 4.545454545454546
                       }
                     }
                   }
@@ -1154,17 +1208,10 @@ window.lunrData = {
                   "MapFormatter.html": {
                     "ref": "MapFormatter.html",
                     "tf": 7.142857142857142
-                  }
-                }
-              }
-            },
-            "s": {
-              "docs": {},
-              "t": {
-                "docs": {
+                  },
                   "MapFormatter.html#.format": {
                     "ref": "MapFormatter.html#.format",
-                    "tf": 4.166666666666666
+                    "tf": 4.545454545454546
                   }
                 }
               }
@@ -1252,29 +1299,6 @@ window.lunrData = {
             }
           }
         },
-        "w": {
-          "docs": {},
-          "i": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "h": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "h": {
-                    "docs": {
-                      "MapFormatter.html#.format": {
-                        "ref": "MapFormatter.html#.format",
-                        "tf": 4.166666666666666
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "_": {
           "docs": {},
           "f": {
@@ -1343,6 +1367,10 @@ window.lunrData = {
                           "ResourceBundle.html#_delimiter": {
                             "ref": "ResourceBundle.html#_delimiter",
                             "tf": 750
+                          },
+                          "MessageKeyFormatter.html#_delimiter": {
+                            "ref": "MessageKeyFormatter.html#_delimiter",
+                            "tf": 750
                           }
                         }
                       }
@@ -1365,7 +1393,7 @@ window.lunrData = {
                   "docs": {
                     "ResourceBundle.html#get": {
                       "ref": "ResourceBundle.html#get",
-                      "tf": 25
+                      "tf": 16.666666666666664
                     }
                   }
                 }
@@ -1425,7 +1453,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 76
+      "length": 79
     },
     "corpusTokens": [
       "_bundl",
@@ -1437,6 +1465,7 @@ window.lunrData = {
       "class",
       "concaten",
       "core",
+      "delimit",
       "develop",
       "document",
       "ex",
@@ -1460,6 +1489,7 @@ window.lunrData = {
       "message.kind",
       "message.level",
       "messagekeyformatt",
+      "messagekeyformatter#_delimit",
       "messagekeyformatter.format",
       "miss",
       "name",
@@ -1470,7 +1500,6 @@ window.lunrData = {
       "portion",
       "readm",
       "replac",
-      "replaced",
       "resourcebundl",
       "resourcebundle#_bundl",
       "resourcebundle#_delimit",
@@ -1481,10 +1510,8 @@ window.lunrData = {
       "rule",
       "simpli",
       "string",
-      "test",
       "text",
-      "togeth",
-      "withth"
+      "togeth"
     ],
     "pipeline": [
       "trimmer",
@@ -1534,7 +1561,7 @@ window.lunrData = {
       "name": "MapFormatter",
       "tags": "MapFormatter",
       "summary": "",
-      "description": "MapFormatter - maps a JSON object of keys to new text",
+      "description": "MapFormatter - Maps a JSON object of keys to new text",
       "body": ""
     },
     "MapFormatter.html#.format": {
@@ -1545,7 +1572,7 @@ window.lunrData = {
       "name": "format",
       "tags": "MapFormatter.format format",
       "summary": "",
-      "description": "Replaces a string with replacedment test from a JSON object. Will replace all instances marked withthe key name"
+      "description": "Replaces a string with replacement text from a JSON object. Will replace all instances marked with the key name"
     },
     "ResourceBundle.html": {
       "id": "ResourceBundle.html",
@@ -1596,7 +1623,7 @@ window.lunrData = {
       "name": "get",
       "tags": "ResourceBundle#get get",
       "summary": "",
-      "description": "Get a string from the bundle"
+      "description": "Get a string from the bundle by key"
     },
     "MessageKeyFormatter.html": {
       "id": "MessageKeyFormatter.html",
@@ -1608,6 +1635,16 @@ window.lunrData = {
       "summary": "",
       "description": "MessageKeyFormatter Concatenate the pieces of the message together if a portion of the key is missing, the rest of the key is ignored. ex. if the \"rule\" attribute is missing, then the key will return with the message.level + message.kind only",
       "body": ""
+    },
+    "MessageKeyFormatter.html#_delimiter": {
+      "id": "MessageKeyFormatter.html#_delimiter",
+      "kind": "member",
+      "title": "_delimiter",
+      "longname": "MessageKeyFormatter#_delimiter",
+      "name": "_delimiter",
+      "tags": "MessageKeyFormatter#_delimiter _delimiter",
+      "summary": "",
+      "description": "Key Delimiter"
     },
     "MessageKeyFormatter.html#.format": {
       "id": "MessageKeyFormatter.html#.format",
