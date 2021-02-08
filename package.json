@@ -1,6 +1,6 @@
 {
   "name": "next-core-bundle",
-  "version": "3.2.2",
+  "version": "3.2.3",
   "description": "The Augmented.js Next - Resource Bundle.",
   "main": "dist/next-core-bundle.js",
   "scripts": {
